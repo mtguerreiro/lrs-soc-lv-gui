@@ -12,5 +12,5 @@ Chair of Control Systems
 // Reference to introduction document
 
 include::introduction.adoc[]
-
+include::Labview content.adoc[]
 

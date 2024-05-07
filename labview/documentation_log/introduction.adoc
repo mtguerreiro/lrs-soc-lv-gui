@@ -138,3 +138,35 @@ So the communication structure with the controller is as follows:
 
 Command + Data
 |===
+
+It should be considered that the controller always replies with a message of at least 4 bytes in size.
+
+_Example: get status of control system 1_
+
+- _Sent to embededd controller_
+[frame=ends]
+|===
+|Data size(4+4)
+
+(4 bytes)|Command - get status
+
+(4 bytes) | ID of control system
+
+(4 bytes)
+|===
+
+- _Reply from embededd controller_
+[frame=ends]
+|===
+|Data size/status (4)
+
+(4 bytes, signed)|Status
+
+(4 bytes, signed)
+|===
+
+The return value is used to indicate status:
+
+- If zero, command was executed successfully
+- If positive, there will be a response and the value indicates size of the incoming data
+- If negative, there was an error executing the command
