@@ -6,38 +6,50 @@ The GUI application is the main interface for the user to interact with the cont
 === LabView software ===
 LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a system-design platform and development environment for a visual programming language from National Instruments. It is commonly used for data acquisition, instrument control, and industrial automation on a variety of platforms including Microsoft Windows, various versions of Unix, Linux, and macOS.  The programming language used in LabVIEW, also referred to as G, is a dataflow programming language. Execution is determined by the structure of a graphical block diagram (the LabVIEW-source code) on which the programmer connects different function-nodes by drawing wires. These wires propagate variables and any node can execute as soon as all its input data become available. Since this might be the case for multiple nodes simultaneously, G is inherently capable of parallel execution. Multi-processing and multi-threading hardware is automatically exploited by the built-in scheduler, which multiplexes multiple OS threads over the nodes ready for execution.
 
-=== Project Structure ===
-Asi como se ha mencionado anteriormente el proyecto esta dividido en 3 partes principales, la interfaz grafica, el controlador de la interfaz y el controlador de la comunicacion serial. A continuacion se muestra la estructura del proyecto en LabVIEW.
+=== Project Structure 
+//Asi como se ha mencionado anteriormente el proyecto esta dividido en 3 partes principales, la interfaz grafica, el controlador de la interfaz y el controlador de la comunicacion serial. A continuacion se muestra la estructura del proyecto en LabVIEW.//
+As mentioned earlier, the project is divided into 3 main parts: the graphical interface, the interface controller, and the serial communication controller. The structure of the project in LabVIEW is shown below.
 
 .Project Structure of the GUI application
 image::../dev_labview/Documentation_vi/Project_Structure_1.svg[Project Structure]
 
-==== LabView Project Structure ====
+=== LabView Project Structure 
 
-//La interfaz grafica fue desarrollada dentro del entorno del LabVIEW, especificamente en un LabVIEW project. Un proyecto de LabVIEW es un archivo que contiene todos los archivos necesarios para desarrollar una aplicacion en LabVIEW. //
+//La interfaz grafica fue desarrollada dentro del entorno del LabVIEW, especificamente en un LabVIEW project. Un proyecto de LabVIEW es un archivo que contiene todos los archivos necesarios para desarrollar una aplicacion en LabVIEW.//
 The graphical interface was developed within the LabVIEW environment, specifically in a LabVIEW project. A LabVIEW project is a file that contains all the files necessary to develop an application in LabVIEW. It helps manage and streamline the development process, especially for complex systems that may include multiple VIs (Virtual Instruments), libraries, shared variables, hardware interfaces, and other resources.
 
-Dentro del proyecto de LabVIEW los subbloques se organizan de la siguiente manera:
+//Dentro del proyecto de LabVIEW los subbloques se organizan de la siguiente manera: //
+Within the LabVIEW project, the sub-blocks are organized in the following way:
 
 .VI Hierarchy of the LabView Project
 image::../dev_labview/Documentation_vi/LVtemp20240312184737_17_0h.png[Hierarquical view in the project Labview]
 
-Donde los principales subbloques son:
+//Donde los principales subbloques son:
+Where the main sub-blocks are:
 
-- *Main_menu.vi:* Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
+- *Main_menu.vi:* 
+//Es el menu principal de la interfaz grafica, en el se encuentran los //botones de acceso a las diferentes funcionalidades de la interfaz grafica.//
+It is the main menu of the graphical interface, in it are the access buttons to the different functionalities of the graphical interface.
 
-- *Window_plot.vi:* Es el subbloque encargado de la visualizacion de los datos en tiempo real.
+- *Window_plot.vi:* 
+//Es el subbloque encargado de la visualizacion de los datos en tiempo real.
+It is the sub-block responsible for the real-time data visualization.
 
-- *Call_signal_fromHW.vi:* Es el subbloque encargado de solicitar los datos de las senales de Main_menu hacia Window_plot.
+- *Call_signal_fromHW.vi:* 
+//Es el subbloque encargado de solicitar los datos de las senales de Main_menu hacia Window_plot.//
+It is the sub-block responsible for requesting the data from the Main_menu signals to Window_plot.
 
-- *Call_signal_fromfile.vi:* Es el subbloque encargado de datos de un archivo csv hacia Window_plot.
+- *Call_signal_fromfile.vi:* 
+//Es el subbloque encargado de datos de un archivo csv hacia Window_plot.//
+It is the sub-block responsible for data from a csv file to Window_plot.
 
-- *Shared_variables.lvlib:* Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas. Todos los window_plot comparten las mismas variables de este subbloque.
+- *Shared_variables.lvlib:* 
+//Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas. Todos los window_plot comparten las mismas variables de este subbloque. A excepcion de Main_menu.vi, los demas subbloques (or subVIs) son llamados por Main_menu.vi y pueden ser reentrantes, es decir son clonados con la finalidad de poder cargar multiples ventanas de visualizacion de datos en tiempo real.//
 
-A excepcion de Main_menu.vi, los demas subbloques (or subVIs) son llamados por Main_menu.vi y pueden ser reentrantes, es decir son clonados con la finalidad de poder cargar multiples ventanas de visualizacion de datos en tiempo real.
+It is the sub-block responsible for communication between the different sub-blocks of the graphical interface through shared variables. All window_plot share the same variables of this sub-block. With the exception of Main_menu.vi, the other sub-blocks (or subVIs) are called by Main_menu.vi and can be reentrant, meaning they are cloned with the purpose of being able to load multiple windows for real-time data visualization.
 
-==== Main_Menu.vi
-Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
+=== Main_Menu.vi
+//Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
 The main menu function acts as the focal point for navigating and utilizing the diverse range of features and capabilities within our application. When users initiate the application, they encounter a user-friendly menu interface, offering a variety of options that cater to their specific requirements.
 
 .Main_menu.vi icon
@@ -55,7 +67,9 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184737_0_0c.png[Main Menu f
 .Main Menu front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184737_1_0.png[Main Menu front panel]
 
-==== Window_plot.vi
+
+
+=== Window_plot.vi
 //Es el subbloque encargado de la visualizacion de los datos en tiempo real.
 This window has the capability to visualize and analyze the graphs of the stored signals from the Main_menu.vi. The user can select the desired signal to be displayed on the graph, and the graph will be updated in real-time as new data is received. The user can also adjust the scale of the graph to better visualize the data.
 
@@ -65,7 +79,7 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184738_0_0c.png[window_plot
 .Window_plot front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
-==== Call_signal_fromHW.vi
+=== Call_signal_fromHW.vi
 Through this function you can select the stored signals from the Main_menu.
 Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 
@@ -79,7 +93,7 @@ Es asi que en el front panel se muestra la lista de las senales almacenadas en e
 .Call_signal_fromHW.vi front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.png[Call_signal_fromHW front panel]
 
-==== Call_signal_fromfile.vi
+=== Call_signal_fromfile.vi
 This function is responsible for reading data from a CSV file and displaying it on the graph. The user can select the desired file from the file browser and the data will be displayed on the graph in real-time.
 
 .Call_signal_fromfile.vi icon with inputs and outputs
@@ -133,5 +147,19 @@ link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
 
 Posterior a arrancar el archivo ejecutable GUI_App.exe, se desplegara la interfaz grafica de la aplicacion. En la cual se podra visualizar las diferentes opciones de la aplicacion (Main_menu.vi).
 
-.Main Menu front panel
-E
+==== Through Main_menu.vi
+El primer paso sera desplazarse a Comm Config (configuracion de la comunicacion) y definir la direccion IP y el puerto de comunicacion con el microcontrolador.
+
+Click en la opcion Save, donde se guardara el puerto y la direccion IP. Y posteriormente la aplicacion verificara si hay conecion con el microcontrolador. 
+Si el microcontrolador esta conectado, se podra visualizar un check en la casilla Connected.
+
+Teniendo coneccion se puede desplazar a la pestana control donde se puede visualizar el contrl set actual. Con los botones "CS enable" y "CTRS 
+enable", activan el sistema de control y control respectivamente.
+
+En la pestana Traces, visualiza el nombre del sistema de traces actuales y samples por senal. Se determin si se obtiene el dato de manera continua o una sola vez en la opcion "Global Mode" y el tiempo de refresco en "Refresh Time".
+Tener las opciones listas, se da click al boton "Start recording" para comenzar a obtener los datos.
+
+Seguido, a la pestana Plot, donde se visualizan las posibles ventanas activas y esta el boton para cerrarlas en un solo instante.
+Dando click en el boton "Generate plot window" se despliega una ventana con las graficas de las senales obtenidas.
+
+==== Through Window_plot.vi
