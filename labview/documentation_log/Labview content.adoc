@@ -1,4 +1,4 @@
-== GUI App - LabVIEW
+== GUI LabVIEW
 
 === Project overview
 The GUI application is the main interface for the user to interact with the control system. It is responsible for displaying the data, sending commands to the microcontroller, and handling errors. The GUI application is built using LabVIEW, a graphical programming language that allows for easy and intuitive development of user interfaces.
@@ -6,13 +6,13 @@ The GUI application is the main interface for the user to interact with the cont
 === LabView software ===
 LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a system-design platform and development environment for a visual programming language from National Instruments. It is commonly used for data acquisition, instrument control, and industrial automation on a variety of platforms including Microsoft Windows, various versions of Unix, Linux, and macOS.  The programming language used in LabVIEW, also referred to as G, is a dataflow programming language. Execution is determined by the structure of a graphical block diagram (the LabVIEW-source code) on which the programmer connects different function-nodes by drawing wires. These wires propagate variables and any node can execute as soon as all its input data become available. Since this might be the case for multiple nodes simultaneously, G is inherently capable of parallel execution. Multi-processing and multi-threading hardware is automatically exploited by the built-in scheduler, which multiplexes multiple OS threads over the nodes ready for execution.
 
-=== Project Structure
+=== Project Structure ===
 Asi como se ha mencionado anteriormente el proyecto esta dividido en 3 partes principales, la interfaz grafica, el controlador de la interfaz y el controlador de la comunicacion serial. A continuacion se muestra la estructura del proyecto en LabVIEW.
 
 .Project Structure of the GUI application
 image::../dev_labview/Documentation_vi/Project_Structure_1.svg[Project Structure]
 
-==== LabView Project 
+==== LabView Project Structure ====
 
 //La interfaz grafica fue desarrollada dentro del entorno del LabVIEW, especificamente en un LabVIEW project. Un proyecto de LabVIEW es un archivo que contiene todos los archivos necesarios para desarrollar una aplicacion en LabVIEW. //
 The graphical interface was developed within the LabVIEW environment, specifically in a LabVIEW project. A LabVIEW project is a file that contains all the files necessary to develop an application in LabVIEW. It helps manage and streamline the development process, especially for complex systems that may include multiple VIs (Virtual Instruments), libraries, shared variables, hardware interfaces, and other resources.
@@ -24,17 +24,114 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184737_17_0h.png[Hierarquic
 
 Donde los principales subbloques son:
 
-- Main_menu.vi: Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
+- *Main_menu.vi:* Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
 
-- Window_plot.vi: Es el subbloque encargado de la visualizacion de los datos en tiempo real.
+- *Window_plot.vi:* Es el subbloque encargado de la visualizacion de los datos en tiempo real.
 
-- Shared_variables.lvlib: Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
+- *Call_signal_fromHW.vi:* Es el subbloque encargado de solicitar los datos de las senales de Main_menu hacia Window_plot.
+
+- *Call_signal_fromfile.vi:* Es el subbloque encargado de datos de un archivo csv hacia Window_plot.
+
+- *Shared_variables.lvlib:* Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas. Todos los window_plot comparten las mismas variables de este subbloque.
+
+A excepcion de Main_menu.vi, los demas subbloques (or subVIs) son llamados por Main_menu.vi y pueden ser reentrantes, es decir son clonados con la finalidad de poder cargar multiples ventanas de visualizacion de datos en tiempo real.
+
+==== Main_Menu.vi
+Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
+The main menu function acts as the focal point for navigating and utilizing the diverse range of features and capabilities within our application. When users initiate the application, they encounter a user-friendly menu interface, offering a variety of options that cater to their specific requirements.
+
+.Main_menu.vi icon
+image::../dev_labview/Documentation_vi/LVtemp20240312184737_0_0c.png[Main Menu front icon]
+
+
+*Key functionalities include:*
+
+- Initiating window plots for data visualization.
+
+- Establishing communication with microcontrollers.
+
+- Implementing robust error handling mechanisms
+
+.Main Menu front panel
+image::../dev_labview/Documentation_vi/LVtemp20240312184737_1_0.png[Main Menu front panel]
+
+==== Window_plot.vi
+//Es el subbloque encargado de la visualizacion de los datos en tiempo real.
+This window has the capability to visualize and analyze the graphs of the stored signals from the Main_menu.vi. The user can select the desired signal to be displayed on the graph, and the graph will be updated in real-time as new data is received. The user can also adjust the scale of the graph to better visualize the data.
+
+.Window_plot.vi icon
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_0_0c.png[window_plot icon]
+
+.Window_plot front panel
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
+
+==== Call_signal_fromHW.vi
+Through this function you can select the stored signals from the Main_menu.
+Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
+
+En el siguiente diagrama se puede observar las entradas y salidas de este subbloque.
+
+.Call_signal_fromHW.vi icon with inputs and outputs
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_7_0c.png[Call_signal_fromHW front panel]
+
+Es asi que en el front panel se muestra la lista de las senales almacenadas en el Main_menu.vi, de las cuales se puede seleccionar la deseada para ser visualizada en el Window_plot.vi.
+
+.Call_signal_fromHW.vi front panel
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.png[Call_signal_fromHW front panel]
+
+==== Call_signal_fromfile.vi
+This function is responsible for reading data from a CSV file and displaying it on the graph. The user can select the desired file from the file browser and the data will be displayed on the graph in real-time.
+
+.Call_signal_fromfile.vi icon with inputs and outputs
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_13_0c.png[Call_signal_fromfile front panel]
+
+Through this function you can select the signals stored in a CSV file.
+
+.Call_signal_fromfile.vi front panel
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Call_signal_fromfile front panel]
 
 
 
+==== Shared_variables.lvlib
+Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
+
+// TODO: Add description of the shared_variables.lvlib
+// TODO: Add images of the shared_variables.lvlib
 
 
 
+== GUI Application
+
+=== Overview
+//La manera de correcta usar la aplicacion es a traves de la ejecucion del archivo ejecutable GUI_App.exe. Este archivo ejecutable fue generado a partir del proyecto de LabVIEW y contiene todas las funcionalidades de la interfaz grafica. Este archivo ejecutable se encuentra en la carpeta GUI_App dentro de la carpeta de LabVIEW. Y es generdo a traves de la opcion de Build Application en el proyecto de LabVIEW.
+//
+The proper way to use the application is by running the executable file GUI_App.exe. This executable was created from the LabVIEW project and includes all the functionalities of the graphical interface.
+
+You can find this executable in the GUI_App folder within the LabVIEW directory. It is generated through the Build Application option in the LabVIEW project.
+
+=== Prerequisites
+
+- NI LabVIEW Runtime 2022 Q3 Patch 1 (64-bit). 
+link:https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html#460613[Labview Runtime]
+
+- Access to the GUI App in the 
+link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
+
+=== Requirements installation
+
+- link:https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html#460613[Labview Runtime]
+
+- Current Version in LabVIEW Development: LabVIEW 2022 Q3 Patch 1 (64-bit)
+
+- Download GUI App in the 
+link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
+
+==== Usage
+- Run the executable file GUI_App
 
 === How to run the GUI application
 
+Posterior a arrancar el archivo ejecutable GUI_App.exe, se desplegara la interfaz grafica de la aplicacion. En la cual se podra visualizar las diferentes opciones de la aplicacion (Main_menu.vi).
+
+.Main Menu front panel
+E
