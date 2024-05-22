@@ -18,3 +18,4 @@ image::../dev_labview/Documentation_vi/Project_Structure_1.svg[Project Structure
 .VI Hierarchy of the project
 image::../dev_labview/Documentation_vi/LVtemp20240312184737_17_0h.png[Hierarquical view in the project Labview]
 
+=== How to run the GUI application
