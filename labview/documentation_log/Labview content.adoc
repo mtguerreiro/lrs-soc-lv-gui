@@ -1,21 +1,40 @@
-== LabView software ==
-LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a system-design platform and development environment for a visual programming language from National Instruments. It is commonly used for data acquisition, instrument control, and industrial automation on a variety of platforms including Microsoft Windows, various versions of Unix, Linux, and macOS.  The programming language used in LabVIEW, also referred to as G, is a dataflow programming language. Execution is determined by the structure of a graphical block diagram (the LabVIEW-source code) on which the programmer connects different function-nodes by drawing wires. These wires propagate variables and any node can execute as soon as all its input data become available. Since this might be the case for multiple nodes simultaneously, G is inherently capable of parallel execution. Multi-processing and multi-threading hardware is automatically exploited by the built-in scheduler, which multiplexes multiple OS threads over the nodes ready for execution.
-
 == GUI App - LabVIEW
 
 === Project overview
 The GUI application is the main interface for the user to interact with the control system. It is responsible for displaying the data, sending commands to the microcontroller, and handling errors. The GUI application is built using LabVIEW, a graphical programming language that allows for easy and intuitive development of user interfaces.
 
-_Built with and for_
-- Labview
+=== LabView software ===
+LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a system-design platform and development environment for a visual programming language from National Instruments. It is commonly used for data acquisition, instrument control, and industrial automation on a variety of platforms including Microsoft Windows, various versions of Unix, Linux, and macOS.  The programming language used in LabVIEW, also referred to as G, is a dataflow programming language. Execution is determined by the structure of a graphical block diagram (the LabVIEW-source code) on which the programmer connects different function-nodes by drawing wires. These wires propagate variables and any node can execute as soon as all its input data become available. Since this might be the case for multiple nodes simultaneously, G is inherently capable of parallel execution. Multi-processing and multi-threading hardware is automatically exploited by the built-in scheduler, which multiplexes multiple OS threads over the nodes ready for execution.
 
 === Project Structure
-
+Asi como se ha mencionado anteriormente el proyecto esta dividido en 3 partes principales, la interfaz grafica, el controlador de la interfaz y el controlador de la comunicacion serial. A continuacion se muestra la estructura del proyecto en LabVIEW.
 
 .Project Structure of the GUI application
 image::../dev_labview/Documentation_vi/Project_Structure_1.svg[Project Structure]
 
-.VI Hierarchy of the project
+==== LabView Project 
+
+//La interfaz grafica fue desarrollada dentro del entorno del LabVIEW, especificamente en un LabVIEW project. Un proyecto de LabVIEW es un archivo que contiene todos los archivos necesarios para desarrollar una aplicacion en LabVIEW. //
+The graphical interface was developed within the LabVIEW environment, specifically in a LabVIEW project. A LabVIEW project is a file that contains all the files necessary to develop an application in LabVIEW. It helps manage and streamline the development process, especially for complex systems that may include multiple VIs (Virtual Instruments), libraries, shared variables, hardware interfaces, and other resources.
+
+Dentro del proyecto de LabVIEW los subbloques se organizan de la siguiente manera:
+
+.VI Hierarchy of the LabView Project
 image::../dev_labview/Documentation_vi/LVtemp20240312184737_17_0h.png[Hierarquical view in the project Labview]
 
+Donde los principales subbloques son:
+
+- Main_menu.vi: Es el menu principal de la interfaz grafica, en el se encuentran los botones de acceso a las diferentes funcionalidades de la interfaz grafica.
+
+- Window_plot.vi: Es el subbloque encargado de la visualizacion de los datos en tiempo real.
+
+- Shared_variables.lvlib: Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
+
+
+
+
+
+
+
 === How to run the GUI application
+
