@@ -107,7 +107,9 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Call_signal
 
 
 ==== Shared_variables.lvlib
-Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
+//Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
+
+It is the sub-block responsible for communication between the different sub-blocks of the graphical interface through shared variables.
 
 // TODO: Add description of the shared_variables.lvlib
 // TODO: Add images of the shared_variables.lvlib
@@ -145,21 +147,42 @@ link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
 
 === How to run the GUI application
 
-Posterior a arrancar el archivo ejecutable GUI_App.exe, se desplegara la interfaz grafica de la aplicacion. En la cual se podra visualizar las diferentes opciones de la aplicacion (Main_menu.vi).
+//Posterior a arrancar el archivo ejecutable GUI_App.exe, se desplegara la interfaz grafica de la aplicacion. En la cual se podra visualizar las diferentes opciones de la aplicacion (Main_menu.vi).
+
+After starting the executable file GUI_App.exe, the graphical interface of the application will be displayed. In which you can view the different options of the application (Main_menu.vi).
 
 ==== Through Main_menu.vi
-El primer paso sera desplazarse a Comm Config (configuracion de la comunicacion) y definir la direccion IP y el puerto de comunicacion con el microcontrolador.
+//El primer paso sera desplazarse a Comm Config (configuracion de la comunicacion) y definir la direccion IP y el puerto de comunicacion con el microcontrolador.
 
-Click en la opcion Save, donde se guardara el puerto y la direccion IP. Y posteriormente la aplicacion verificara si hay conecion con el microcontrolador. 
-Si el microcontrolador esta conectado, se podra visualizar un check en la casilla Connected.
+//Click en la opcion Save, donde se guardara el puerto y la direccion IP. Y posteriormente la aplicacion verificara si hay conecion con el microcontrolador. Si el microcontrolador esta conectado, se podra visualizar un check en la casilla Connected.
 
-Teniendo coneccion se puede desplazar a la pestana control donde se puede visualizar el contrl set actual. Con los botones "CS enable" y "CTRS 
-enable", activan el sistema de control y control respectivamente.
+//Teniendo coneccion se puede desplazar a la pestana control donde se puede visualizar el contrl set actual. Con los botones "CS enable" y "CTRS enable", activan el sistema de control y control respectivamente.
 
-En la pestana Traces, visualiza el nombre del sistema de traces actuales y samples por senal. Se determin si se obtiene el dato de manera continua o una sola vez en la opcion "Global Mode" y el tiempo de refresco en "Refresh Time".
-Tener las opciones listas, se da click al boton "Start recording" para comenzar a obtener los datos.
+//En la pestana Traces, visualiza el nombre del sistema de traces actuales y samples por senal. Se determin si se obtiene el dato de manera continua o una sola vez en la opcion "Global Mode" y el tiempo de refresco en "Refresh Time". Tener las opciones listas, se da click al boton "Start recording" para comenzar a obtener los datos.
 
-Seguido, a la pestana Plot, donde se visualizan las posibles ventanas activas y esta el boton para cerrarlas en un solo instante.
-Dando click en el boton "Generate plot window" se despliega una ventana con las graficas de las senales obtenidas.
+//Seguido, a la pestana Plot, donde se visualizan las posibles ventanas activas y esta el boton para cerrarlas en un solo instante.Dando click en el boton "Generate plot window" se despliega una ventana con las graficas de las senales obtenidas.//
+
+The first step will be to navigate to Comm Config (communication configuration) and define the IP address and communication port with the microcontroller.
+
+Click on the Save option, where the port and IP address will be saved. Subsequently, the application will verify if there is a connection with the microcontroller. If the microcontroller is connected, a check can be seen in the Connected box.
+
+// load Main_menu_Commun_Config.png
+image::../dev_labview/Documentation_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
+
+Having a connection, you can move to the control tab where you can view the current control set. With the "CS enable" and "CTRS enable" buttons, they activate the control system and control respectively.
+
+// load Main_menu_Control.png
+image::../dev_labview/Documentation_vi/Main__menu_Control.png[Main_menu_Control]
+
+In the Traces tab, you can see the name of the current traces system and samples per signal. It is determined if the data is obtained continuously or only once in the "Global Mode" option and the refresh time in "Refresh Time". Having the options ready, click on the "Start recording" button to start obtaining the data.
+
+// load Main_menu_Traces.png
+image::../dev_labview/Documentation_vi/Main__menu_traces.png[Main_menu_Traces]
+
+Next, go to the Plot tab, where you can see the possible active windows and there is a button to close them in a single instant. Clicking on the "Generate plot window" button displays a window with the graphs of the obtained signals.
+
+// load Main_menu_Plot.png
+image::../dev_labview/Documentation_vi/Main__menu_Plot.png[Main_menu_Plot]
 
 ==== Through Window_plot.vi
+
