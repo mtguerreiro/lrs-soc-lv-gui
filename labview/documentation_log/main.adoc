@@ -1,17 +1,17 @@
 = Design and Implementation of User Interface for Labview Application =
+:toc: preamble
 :reproducible:
 
-
 Department of Electrical and Computer Engineering
+RPTU
 Chair of Control Systems
 
-== Abstract ==
-
-== Table of Contents ==
+:reproducible:
 
 // Reference to introduction document
-
+== Abstract ==
 include::introduction.adoc[]
 include::Labview Project Insights.adoc[]
 include::Main_menu.adoc[]
+include::Window_plot.adoc[]
 

@@ -24,9 +24,8 @@ In the front panel, the following elements are found:
 // load Main_menu_Error_button.png
 image::../dev_labview/Documentation_vi/Main__menu_Error_button.png[Error button ]
 
-=== Tabs
 
-==== Error Handler
+=== Tab Error Handler
 
 // En esta pestana se muestra el error que se ha generado en la aplicacion. Ademas, se muestra el codigo del error y la descripcion del error. Para limpiar el error generado se debe presionar el boton *Clear error* que se encuentra a la derecha de la pestana "Error Handler".
 
@@ -37,7 +36,7 @@ In this tab, the error that has been generated in the application is displayed. 
 image::../dev_labview/Documentation_vi/Main__menu_Error_Handler.png[Main_menu_Plot]
 
 
-==== Plot
+=== Tab Plot
 
 In this tab you can see the possible active windows in the table *List of active windows*. In the bottom, there is a button to close them *Close all plots* in a single instant. Clicking on the *Generate plot window* button displays a window with the graphs of the obtained signals.
 
@@ -45,7 +44,7 @@ In this tab you can see the possible active windows in the table *List of active
 // load Main_menu_Plot.png
 image::../dev_labview/Documentation_vi/Main__menu_Plot.png[Main_menu_Plot]
 
-==== Traces
+=== Tab Traces
 
 In the Traces tab, you can see the name of the current traces system in the microcontroller *Trace names*.
 
@@ -66,7 +65,7 @@ The button *CSV* is used to save the all the data obtained in a CSV file.
 image::../dev_labview/Documentation_vi/Main__menu_traces.png[Main_menu_Traces]
 
 
-==== Control
+=== Tab Control
 
 //En el selectionador *# Control* se muestra los controles disponibles para ser seleccionados. A su vez en *Total controls* se muestra la cantidad de controles presetes en el sistema de control (CS).
 
@@ -84,7 +83,7 @@ Next, the *CS enable* button enables the control system, indicating a color chan
 // load Main_menu_Control.png
 image::../dev_labview/Documentation_vi/Main__menu_Control.png[Main_menu_Control]
 
-===== Section CS_IF_Params
+==== Section CS_IF_Params
 //En el bloque CS_IF_Params se encuentran cuatro controles numericos que permiten configurar los parametros de la interfaz de control. Estos parametros son:
 
 In the *CS_IF_Params* block, there are four numeric controls that allow you to configure the parameters of the control interface. These parameters are:
@@ -107,7 +106,7 @@ Upon setting the values of these parameters, the *Save CTRL parameters* button m
 
 _It should be clarified that these parameters will depend on the configuration developed in the controller. It will require reviewing the documentation of the microcontroller development._
 
-==== Comm Config
+=== Tab Comm Config
 
 La pestana Comm Config representa la seccion para configurar la comunicacion entre el microcontrolador y la aplicacion. En esta seccion se encuentran los siguientes elementos de control:
 - *Hostname*: Indicador para mostrar el nombre del host o IP Address a comunicar.
@@ -130,7 +129,7 @@ Subsequently, the application will verify if there is a connection with the micr
 // load Main_menu_Commun_Config.png
 image::../dev_labview/Documentation_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
 
-==== Message
+=== Tab Message
 
 //Esta pestana solamente se utiliza para enviar mensajes y datos a la ventanas activas en la aplicacion. Solamente los mensajes se podran visualizar dentro de diagrama de bloques de la respectiva ventana activa. 
 
