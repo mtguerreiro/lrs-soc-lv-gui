@@ -1,0 +1,18 @@
+== Main_menu.vi
+
+=== Overview
+
+Main_menu.vi is the main VI of the application. It is the first VI that is called when the application is launched. It is responsible for creating the main window of the application and for managing the different sub-VIs that are called from the main window.
+The Main_menu.vi is divided into two main sections: the front panel and the block diagram. The front panel is the user interface of the VI, where the user can interact with the application. The block diagram is the code that controls the behavior of the VI.
+Thus, the elements found in the front panel of Main_menu.vi will be described below.
+
+//Es asi que se describiran a constinuacion los elementos que se encuentran en el front panel de Main_menu.vi.
+//En el front panel se encuentran los siguientes elementos:
+In the front panel, the following elements are found:
+
+=== Elements
+
+- Indicador "Error" : Este indicador se encarga de mostrar los errores que se han generado en la aplicacion. Cada vez que se genera un error en la aplicacion, este indicador se activa. Al suceder este se tiene que trasladar a la pestana "Error Handler" para ver el error que se ha generado. Y por otra parte presionar el boton "Clear error" para limpiar los errores que se han generado en la aplicacion y reanudar el funcionamiento de la aplicacion. Ya que la aplicacion se detiene cuando se genera un error.
+
+- Boton "Clear error" : Este boton se encarga de limpiar los errores que se han generado en la aplicacion. Cada vez que se presiona este boton, se limpian los errores que se han generado en la aplicacion.
+

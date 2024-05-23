@@ -166,23 +166,49 @@ The first step will be to navigate to Comm Config (communication configuration) 
 
 Click on the Save option, where the port and IP address will be saved. Subsequently, the application will verify if there is a connection with the microcontroller. If the microcontroller is connected, a check can be seen in the Connected box.
 
+.Communication Configuration tab in Main_menu.vi
 // load Main_menu_Commun_Config.png
 image::../dev_labview/Documentation_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
 
 Having a connection, you can move to the control tab where you can view the current control set. With the "CS enable" and "CTRS enable" buttons, they activate the control system and control respectively.
 
+.Control tab in Main_menu.vi
 // load Main_menu_Control.png
 image::../dev_labview/Documentation_vi/Main__menu_Control.png[Main_menu_Control]
 
 In the Traces tab, you can see the name of the current traces system and samples per signal. It is determined if the data is obtained continuously or only once in the "Global Mode" option and the refresh time in "Refresh Time". Having the options ready, click on the "Start recording" button to start obtaining the data.
 
+.Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
 image::../dev_labview/Documentation_vi/Main__menu_traces.png[Main_menu_Traces]
 
-Next, go to the Plot tab, where you can see the possible active windows and there is a button to close them in a single instant. Clicking on the "Generate plot window" button displays a window with the graphs of the obtained signals.
+Next, go to the Plot tab, where you can see the possible active windows and there is a button to close them ("Close all plots") in a single instant. Clicking on the "Generate plot window" button displays a window with the graphs of the obtained signals.
 
+.Plot tab in Main_menu.vi
 // load Main_menu_Plot.png
 image::../dev_labview/Documentation_vi/Main__menu_Plot.png[Main_menu_Plot]
 
 ==== Through Window_plot.vi
 
+Posteriormente a tener una ventana de graficas activa, se pueden visualizar las senales obtenidas. Una grafica mostrando la amplitud de la senal en el eje Y y el tiempo en el eje X. 
+
+.Window_plot front panel
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
+
+Es asi que en la parte superior izquierda de la ventana se puede proceder solicitar la senal requerida a traves de las siguientes dos opciones.
+En la opcion que dice "New" permite elegir entre dos opciones:
+
+- Get signal from HW: Permite seleccionar la senal almacenada en el Main_menu.vi. Esta senal fue obtenida a traves de la comunicacion con el microcontrolador.
+- Get signal from file: Permite seleccionar la senal almacenada en un archivo csv.
+
+En el momento de seleccionar la senal se mostrara en la grafica y se mostrara su nombre en la parte inferior derecha de la ventana, en la tabla "Plot legend".
+
+.Table of plot legend.vi
+image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
+
+==== Close Window_plot.vi
+
+La manera mas sencilla para cerrar la ventana de graficas se puede dar click en el boton "Close" en la parte superior derecha de la ventana. O tambien con dar click en el boton "Close all plots" en la ventana de Main_menu.vi.
+
+
+//En la parte izquierda inferior se encuentra el Graph Pallet donde se puede configurar la escala y 
