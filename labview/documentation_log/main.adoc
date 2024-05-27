@@ -3,8 +3,10 @@
 :reproducible:
 
 Department of Electrical and Computer Engineering
-RPTU
+
 Chair of Control Systems
+
+*RPTU*
 
 :reproducible:
 
