@@ -111,8 +111,13 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Call_signal
 
 It is the sub-block responsible for communication between the different sub-blocks of the graphical interface through shared variables.
 
-// TODO: Add description of the shared_variables.lvlib
+LabVIEW provides access to a wide variety of technologies for creating distributed applications. The shared variable simplifies the programming necessary for such applications. This article provides an introduction to the shared variable and includes a discussion of its features and performance.
+
+Using the shared variable, you can share data between loops on a single diagram or between VIs across the network. In contrast to many other data-sharing methods in LabVIEW, such as UDP/TCP, LabVIEW queues, and Real-Time FIFOs, you typically configure the shared variable at edit time using property dialogs, and you do not need to include configuration code in your application.
+
 // TODO: Add images of the shared_variables.lvlib
+.Shared_variables.lvlib icon
+image::../dev_labview/Documentation_vi/LVtemp20240312184737_16_0c.png[Shared_variables.lvlib icon]
 
 
 
@@ -190,25 +195,35 @@ image::../dev_labview/Documentation_vi/Main__menu_Plot.png[Main_menu_Plot]
 
 ==== Through Window_plot.vi
 
-Posteriormente a tener una ventana de graficas activa, se pueden visualizar las senales obtenidas. Una grafica mostrando la amplitud de la senal en el eje Y y el tiempo en el eje X. 
+//Posteriormente a tener una ventana de graficas activa, se pueden visualizar las senales obtenidas. Una grafica mostrando la amplitud de la senal en el eje Y y el tiempo en el eje X. 
+
+After having an active graph window, the obtained signals can be visualized. A graph showing the signal amplitude on the Y-axis and time on the X-axis.
 
 .Window_plot front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
-Es asi que en la parte superior izquierda de la ventana se puede proceder solicitar la senal requerida a traves de las siguientes dos opciones.
-En la opcion que dice "New" permite elegir entre dos opciones:
+//Es asi que en la parte superior izquierda de la ventana se puede proceder solicitar la senal requerida a traves de las siguientes dos opciones. En la opcion que dice "New" permite elegir entre dos opciones:
 
-- Get signal from HW: Permite seleccionar la senal almacenada en el Main_menu.vi. Esta senal fue obtenida a traves de la comunicacion con el microcontrolador.
-- Get signal from file: Permite seleccionar la senal almacenada en un archivo csv.
+//- Get signal from HW: Permite seleccionar la senal almacenada en el Main_menu.vi. Esta senal fue obtenida a traves de la comunicacion con el microcontrolador.
+//- Get signal from file: Permite seleccionar la senal almacenada en un archivo csv.
 
-En el momento de seleccionar la senal se mostrara en la grafica y se mostrara su nombre en la parte inferior derecha de la ventana, en la tabla "Plot legend".
+//En el momento de seleccionar la senal se mostrara en la grafica y se mostrara su nombre en la parte inferior derecha de la ventana, en la tabla "Plot legend".
+
+Thus, in the upper left part of the window, you can proceed to request the required signal through the following two options. In the option that says "New" allows you to choose between two options:
+
+- Get signal from HW: Allows you to select the signal stored in the Main_menu.vi. This signal was obtained through communication with the microcontroller.
+
+- Get signal from file: Allows you to select the signal stored in a csv file.
+
+At the moment of selecting the signal, it will be displayed on the graph and its name will be displayed in the lower right part of the window, in the "Plot legend" table
 
 .Table of plot legend.vi
 image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
 
 ==== Close Window_plot.vi
 
-La manera mas sencilla para cerrar la ventana de graficas se puede dar click en el boton "Close" en la parte superior derecha de la ventana. O tambien con dar click en el boton "Close all plots" en la ventana de Main_menu.vi.
-
+//La manera mas sencilla para cerrar la ventana de graficas se puede dar click en el boton "Close" en la parte superior derecha de la ventana. O tambien con dar click en el boton "Close all plots" en la ventana de Main_menu.vi.
 
 //En la parte izquierda inferior se encuentra el Graph Pallet donde se puede configurar la escala y 
+
+The simplest way to close the graph window is to click on the "Close" button in the upper right part of the window. Or also by clicking on the "Close all plots" button in the Main_menu.vi window.
