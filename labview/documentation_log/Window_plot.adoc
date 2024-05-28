@@ -72,19 +72,48 @@ image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot lege
 
 Components of the Plot Legend
 
-Plot Name: Displays the name or label of each plot. Can be customized to provide meaningful names that describe the data.
+*Plot Name:* Displays the name or label of each plot. Can be customized to provide meaningful names that describe the data.
 
-Line Style and Color: Shows the style (solid, dashed, dotted) and color of the line associated with each plot. Helps visually differentiate between multiple plots on the same graph.
+*Line Style and Color:* Shows the style (solid, dashed, dotted) and color of the line associated with each plot. Helps visually differentiate between multiple plots on the same graph.
 
-Point Style: Indicates the style of data points (circle, square, triangle) used in the plot. Useful for distinguishing between data sets that might otherwise look similar.
+*Point Style:* Indicates the style of data points (circle, square, triangle) used in the plot. Useful for distinguishing between data sets that might otherwise look similar.
 
-Visibility Toggle: Allows users to hide or show specific plots without removing the data from the graph. Useful for focusing on specific data sets while temporarily ignoring other
+*Visibility Toggle:* Allows users to hide or show specific plots without removing the data from the graph. Useful for focusing on specific data sets while temporarily ignoring other
 
 ==== Offset Control
 
+The offset control is used to set the offset of the signal.
+The first rectangle is used to select the signal to be offset. And follows the slider to set the offset value.
+
+.Offset Control
+image::../dev_labview/Documentation_vi/Windows_p_Select offset.PNG[Select offset in Window_plot.vi]
 
 ==== Get signal from HW
 
+The Get signal from HW is used to get the signal from the hardware.
+
+.Get signal from HW window
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.PNG[Get signal from HW in Window_plot.vi]
+
+Features of Get signal from HW:
+
+- Plot window: Shows the current name of the window.
+- Clone Name: Shows the name of the clone version of the window_plot.vi .
+- Select signal: Select the signal to be plotted.
 
 
-==== Get signal from Signal
+==== Get signal from file
+
+The Get signal from file is used to get the signal from a csv file.
+
+image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Get signal from file in Window_plot.vi]
+
+Features of Get signal from HW:
+
+- Plot window: Shows the current name of the window.
+- Clone Name: Shows the name of the clone version of the window_plot.vi .
+- From file (csv): Select the csv file to be plotted.
+- Y data: Select the column to be plotted as Y.
+- X data: Select the column to be plotted as X.
+
+
