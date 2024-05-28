@@ -20,19 +20,71 @@ The waveform graph has the following properties:
 
 - Graph Pallet
 
+The Graph Palette in LabVIEW is a set of tools and options that allow you to customize the appearance and behavior of a graph or chart. It is typically available when you right-click on a graph or chart control in the front panel window link:https://www.ni.com/docs/en-US/bundle/ni-vision-builder-for-automated-inspection-configuration-help/page/vbai_config/graphpalette.html[Graph Palette Documentation].
+
 .Graph Pallet
 image::../dev_labview/Documentation_vi/Windows_p_Graph_pallete.PNG[Graph pallete in Window_plot.vi]
 
+Here are some of the features you can access from the Graph Palette:
+
+*Cursor Movement Tool:* No function.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_cursor.gif[Cursor]
+
+*Zoom:* Zooms in and out of the display.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_resize.gif[Zoom]
+
+*Zoom to Rectangle:* Zooms in on a rectangle that you draw on the display area.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_torectangle.gif[Zoom to Rectangle]
+
+*X-zoom:* Zooms in along the x-axis.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_xzoom.gif[X-zoom]
+
+*Y-zoom:* Zooms in along the y-axis.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_yzoom.gif[Y-zoom]
+
+*Zoom In about Point*: Autoscales the chart to fit in the display area.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_tofit.gif[Zoom In about Point]
+
+*Zoom Out about Point:* Zooms in on a point.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_outaboutpoint.gif[Zoom Out about Point]
+
+*Zoom to Fit:* Zooms out from a point.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_inaboutpoint.gif[Zoom to Fit]
+
+*Panning Tool:* Repositions the plot on the display.
+
+image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_repo.gif[Panning Tool]
 
 - Table of plot legend
+
+The plot legend in LabVIEW is a graphical feature that provides information about the different plots or data series displayed in a graph or chart. It helps users distinguish between multiple data sets and understand what each plot represents. Here’s a detailed overview of the table of plot legend in LabVIEW:
 
 .Table of plot legend
 image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
 
+Components of the Plot Legend
+
+Plot Name: Displays the name or label of each plot. Can be customized to provide meaningful names that describe the data.
+
+Line Style and Color: Shows the style (solid, dashed, dotted) and color of the line associated with each plot. Helps visually differentiate between multiple plots on the same graph.
+
+Point Style: Indicates the style of data points (circle, square, triangle) used in the plot. Useful for distinguishing between data sets that might otherwise look similar.
+
+Visibility Toggle: Allows users to hide or show specific plots without removing the data from the graph. Useful for focusing on specific data sets while temporarily ignoring other
 
 ==== Offset Control
 
 
 ==== Get signal from HW
+
+
 
 ==== Get signal from Signal
