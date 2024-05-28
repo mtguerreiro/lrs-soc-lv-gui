@@ -48,10 +48,11 @@ The current labview project is developed in LabVIEW 2022 Q3 Patch 1 (64-bit).
 The project is divided into the following sections:
 
 The complete report of the application is located in the adoc file
-[Application_report](labview/documentation_log/main.adoc). 
+[Application_report](documentation_log/Project Report_GUI Labview.adoc). 
 
-For PDF version in the following link ..
+For *PDF* version in the following link [Project Report PDF](documentation_log/Project Report_GUI Labview.pdf).
 
+For *HTML* version in the following link [Project Report HTML](documentation_log/Project Report_GUI Labview.html).
 
 The documentation changes are located in the [documentation_log](documentation_log) folder.
 
