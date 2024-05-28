@@ -97,8 +97,8 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.PNG[Get signal f
 
 Features of Get signal from HW:
 
-- Plot window: Shows the current name of the window.
-- Clone Name: Shows the name of the clone version of the window_plot.vi .
+- Plot window: Shows the current name of the caller window_plot.vi.
+- Clone Name: Shows the name of the clone version of Call_signal_fromfile.vi.
 - Select signal: Select the signal to be plotted.
 
 

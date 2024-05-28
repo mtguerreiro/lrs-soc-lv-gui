@@ -56,5 +56,7 @@ For *PDF* and *HTML* version [documentation_log](documentation_log) folder. Fina
 <!-- This project is licensed under the MIT License - see the [LICENSE.md] -->
 
 ## Contact 
-Victor H - @VictorUhr
+**Victor H** - reynoso@rptu.de - @VictorUhr 
+
+Project Link: https://github.com/VictorUhr
 
