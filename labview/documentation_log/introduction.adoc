@@ -1,9 +1,9 @@
-== Introduction
+== Introduction ==
 This document outlines the significant changes made to the naming conventions within our project. The primary objective of these changes is to enhance readability, maintainability, and consistency across our codebase.
 The changes span across various components of our project, including VI, Functions, TCP Client, and Variables. Each section in this document corresponds to these components and provides a detailed overview of the old names, the new names, and a brief description of their functionalities. This will not only simplify the process of understanding the code but also make it easier to debug, test, and enhance the project in the future.
 Please refer to the table of contents for easy navigation through the document.
 
-=== Overview
+=== Overview ===
 The Graphical User Interface (GUI) application is the main interface for the user to interact with the control system. It is responsible for displaying the data, sending commands to the microcontroller, and handling errors. The GUI application is built using LabVIEW, a graphical programming language that allows for easy and intuitive development of user interfaces.
 
 === Purpose

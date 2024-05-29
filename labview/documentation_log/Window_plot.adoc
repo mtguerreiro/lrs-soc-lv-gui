@@ -1,4 +1,4 @@
-== Window_plot.vi
+== Window_plot.vi in detail ==
 
 === Overview ===
 
@@ -88,6 +88,18 @@ The first rectangle is used to select the signal to be offset. And follows the s
 .Offset Control
 image::../dev_labview/Documentation_vi/Windows_p_Select offset.PNG[Select offset in Window_plot.vi]
 
+//Cuando se hace uso de este control, las senales se detienen para su interpretacion. La unica manera de reanudar la adquisicion de datos es accesando al menu _Configuration->Local Mode & Refresh Time_. En ese apartado se puede reanudar la adquisicion de datos. Y tambien definir el tiempo de refresco local de la grafica.
+
+When this control is used, the signals stop for interpretation. The only way to resume data acquisition is by accessing the _Configuration->Local Mode & Refresh Time menu_.
+
+.Path to _Local mode & Refresh Time_ option.
+image::../dev_labview/Documentation_vi/Windows_plot_LocalMode_1.PNG[Local mode in Window_plot.vi]
+
+In that section, you can resume data acquisition. And also it can be defined the local refresh time of the graph.
+
+.Local mode & Refresh Time window
+image::../dev_labview/Documentation_vi/Windows_plot_LocalMode_2.PNG[Local mode in Window_plot.vi]
+
 ==== Get signal from HW
 
 The Get signal from HW is used to get the signal from the hardware.
@@ -106,7 +118,7 @@ Features of Get signal from HW:
 
 The Get signal from file is used to get the signal from a csv file.
 
-image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Get signal from file in Window_plot.vi]
+image::../dev_labview/Documentation_vi/Windows_plot_fromFile.png[Get signal from file in Window_plot.vi]
 
 Features of Get signal from HW:
 

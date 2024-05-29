@@ -1,4 +1,4 @@
-== GUI LabVIEW
+== LabVIEW Project ==
 
 === Project overview
 The GUI application is the main interface for the user to interact with the control system. It is responsible for displaying the data, sending commands to the microcontroller, and handling errors. The GUI application is built using LabVIEW, a graphical programming language that allows for easy and intuitive development of user interfaces.
@@ -67,8 +67,6 @@ image::../dev_labview/Documentation_vi/LVtemp20240312184737_0_0c.png[Main Menu f
 .Main Menu front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184737_1_0.png[Main Menu front panel]
 
-
-
 === Window_plot.vi
 //Es el subbloque encargado de la visualizacion de los datos en tiempo real.
 This window has the capability to visualize and analyze the graphs of the stored signals from the Main_menu.vi. The user can select the desired signal to be displayed on the graph, and the graph will be updated in real-time as new data is received. The user can also adjust the scale of the graph to better visualize the data.
@@ -104,8 +102,6 @@ Through this function you can select the signals stored in a CSV file.
 .Call_signal_fromfile.vi front panel
 image::../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png[Call_signal_fromfile front panel]
 
-
-
 ==== Shared_variables.lvlib
 //Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
 
@@ -115,17 +111,14 @@ LabVIEW provides access to a wide variety of technologies for creating distribut
 
 Using the shared variable, you can share data between loops on a single diagram or between VIs across the network. In contrast to many other data-sharing methods in LabVIEW, such as UDP/TCP, LabVIEW queues, and Real-Time FIFOs, you typically configure the shared variable at edit time using property dialogs, and you do not need to include configuration code in your application.
 
-// TODO: Add images of the shared_variables.lvlib
-.Shared_variables.lvlib icon
-image::../dev_labview/Documentation_vi/LVtemp20240312184737_16_0c.png[Shared_variables.lvlib icon]
+.Shared_variables.lvlib in LabVIEW project
+image::../dev_labview/Documentation_vi/Shared_variables.PNG[Shared_variables.lvlib icon]
 
+== Getting started of GUI Application ==
 
+=== Overview ===
+//La manera de correcta usar la aplicacion es a traves de la ejecucion del archivo ejecutable GUI_App.exe. Este archivo ejecutable fue generado a partir del proyecto de LabVIEW y contiene todas las funcionalidades de la interfaz grafica. Este archivo ejecutable se encuentra en la carpeta GUI_App dentro de la carpeta de LabVIEW. Y es generdo a traves de la opcion de Build Application en el proyecto de LabVIEW. //
 
-== GUI Application
-
-=== Overview
-//La manera de correcta usar la aplicacion es a traves de la ejecucion del archivo ejecutable GUI_App.exe. Este archivo ejecutable fue generado a partir del proyecto de LabVIEW y contiene todas las funcionalidades de la interfaz grafica. Este archivo ejecutable se encuentra en la carpeta GUI_App dentro de la carpeta de LabVIEW. Y es generdo a traves de la opcion de Build Application en el proyecto de LabVIEW.
-//
 The proper way to use the application is by running the executable file GUI_App.exe. This executable was created from the LabVIEW project and includes all the functionalities of the graphical interface.
 
 You can find this executable in the GUI_App folder within the LabVIEW directory. It is generated through the Build Application option in the LabVIEW project.
@@ -136,7 +129,7 @@ You can find this executable in the GUI_App folder within the LabVIEW directory.
 link:https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html#460613[Labview Runtime]
 
 - Access to the GUI App in the 
-link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
+link:../labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
 
 === Requirements installation
 
@@ -145,7 +138,7 @@ link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
 - Current Version in LabVIEW Development: LabVIEW 2022 Q3 Patch 1 (64-bit)
 
 - Download GUI App in the 
-link:labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
+link:../labview/builds/GUI_App/GUI_App.exe[GUI_App folder]
 
 ==== Usage
 - Run the executable file GUI_App
@@ -220,7 +213,7 @@ At the moment of selecting the signal, it will be displayed on the graph and its
 .Table of plot legend.vi
 image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
 
-==== Close Window_plot.vi
+==== Close Window_plot.vi ====
 
 //La manera mas sencilla para cerrar la ventana de graficas se puede dar click en el boton "Close" en la parte superior derecha de la ventana. O tambien con dar click en el boton "Close all plots" en la ventana de Main_menu.vi.
 
