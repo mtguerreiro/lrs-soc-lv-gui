@@ -43,17 +43,22 @@ control "Actuator" as G
 Inside the controller, there are two basic elements with which the GUI interacts:
 
 ==== Control Systems
-Different control systems interact with the actuators present in the global system and can be contained within a single controller as shown in the figure <<CS_diagram1.png>>.
+Different control systems interact with the actuators present in the global system and can be contained within a single controller as shown in the figure
+
+//.The control system schematic
+//image::../documentation_log/Graphs_Doc_vi/CS_diagram1.png[Circuit diagram of the control system]
 
 Within the control system, it is divided into two sections, the controller and the hardware.
 
 .Controller
 In the controller, the following basic elements exist:
+
     - ID
     - Enable/disable
     - Status
     - Controller interface
     - Hardware interface
+
 These are defined within the controller's algorithm. Much of the GUI interaction is done with these elements.
 
 On the other hand, the hardware is divided into two sections:

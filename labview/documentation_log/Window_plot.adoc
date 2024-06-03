@@ -12,7 +12,7 @@ This VI is used to plot data in a window. It is a simple wrapper around the XY G
 The waveform graph displays one or more plots of evenly sampled measurements. 
 
 .Window_plot front panel
-image::../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
+image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
 ===== Properties =====
 
@@ -23,52 +23,52 @@ The waveform graph has the following properties:
 The Graph Palette in LabVIEW is a set of tools and options that allow you to customize the appearance and behavior of a graph or chart. It is typically available when you right-click on a graph or chart control in the front panel window link:https://www.ni.com/docs/en-US/bundle/ni-vision-builder-for-automated-inspection-configuration-help/page/vbai_config/graphpalette.html[Graph Palette Documentation].
 
 .Graph Pallet
-image::../dev_labview/Documentation_vi/Windows_p_Graph_pallete.PNG[Graph pallete in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_p_Graph_pallete.PNG[Graph pallete in Window_plot.vi]
 
 Here are some of the features you can access from the Graph Palette:
 
 *Cursor Movement Tool:* No function.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_cursor.gif[Cursor]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_graph_cursor.gif[Cursor]
 
 *Zoom:* Zooms in and out of the display.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_resize.gif[Zoom]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_graph_resize.gif[Zoom]
 
 *Zoom to Rectangle:* Zooms in on a rectangle that you draw on the display area.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_torectangle.gif[Zoom to Rectangle]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_torectangle.gif[Zoom to Rectangle]
 
 *X-zoom:* Zooms in along the x-axis.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_xzoom.gif[X-zoom]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_xzoom.gif[X-zoom]
 
 *Y-zoom:* Zooms in along the y-axis.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_yzoom.gif[Y-zoom]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_yzoom.gif[Y-zoom]
 
 *Zoom In about Point*: Autoscales the chart to fit in the display area.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_tofit.gif[Zoom In about Point]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_tofit.gif[Zoom In about Point]
 
 *Zoom Out about Point:* Zooms in on a point.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_outaboutpoint.gif[Zoom Out about Point]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_outaboutpoint.gif[Zoom Out about Point]
 
 *Zoom to Fit:* Zooms out from a point.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_zoom_inaboutpoint.gif[Zoom to Fit]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_zoom_inaboutpoint.gif[Zoom to Fit]
 
 *Panning Tool:* Repositions the plot on the display.
 
-image::../dev_labview/Documentation_vi/Graph pallet/noloc_graph_repo.gif[Panning Tool]
+image::../documentation_log/Graphs_Doc_vi/Graph pallet/noloc_graph_repo.gif[Panning Tool]
 
 - Table of plot legend
 
 The plot legend in LabVIEW is a graphical feature that provides information about the different plots or data series displayed in a graph or chart. It helps users distinguish between multiple data sets and understand what each plot represents. Here’s a detailed overview of the table of plot legend in LabVIEW:
 
 .Table of plot legend
-image::../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
 
 Components of the Plot Legend
 
@@ -86,26 +86,26 @@ The offset control is used to set the offset of the signal.
 The first rectangle is used to select the signal to be offset. And follows the slider to set the offset value.
 
 .Offset Control
-image::../dev_labview/Documentation_vi/Windows_p_Select offset.PNG[Select offset in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_p_Select offset.PNG[Select offset in Window_plot.vi]
 
 //Cuando se hace uso de este control, las senales se detienen para su interpretacion. La unica manera de reanudar la adquisicion de datos es accesando al menu _Configuration->Local Mode & Refresh Time_. En ese apartado se puede reanudar la adquisicion de datos. Y tambien definir el tiempo de refresco local de la grafica.
 
 When this control is used, the signals stop for interpretation. The only way to resume data acquisition is by accessing the _Configuration->Local Mode & Refresh Time menu_.
 
 .Path to _Local mode & Refresh Time_ option.
-image::../dev_labview/Documentation_vi/Windows_plot_LocalMode_1.PNG[Local mode in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_plot_LocalMode_1.PNG[Local mode in Window_plot.vi]
 
 In that section, you can resume data acquisition. And also it can be defined the local refresh time of the graph.
 
 .Local mode & Refresh Time window
-image::../dev_labview/Documentation_vi/Windows_plot_LocalMode_2.PNG[Local mode in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_plot_LocalMode_2.PNG[Local mode in Window_plot.vi]
 
 ==== Get signal from HW
 
 The Get signal from HW is used to get the signal from the hardware.
 
 .Get signal from HW window
-image::../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.PNG[Get signal from HW in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_8_0.PNG[Get signal from HW in Window_plot.vi]
 
 Features of Get signal from HW:
 
@@ -118,7 +118,7 @@ Features of Get signal from HW:
 
 The Get signal from file is used to get the signal from a csv file.
 
-image::../dev_labview/Documentation_vi/Windows_plot_fromFile.png[Get signal from file in Window_plot.vi]
+image::../documentation_log/Graphs_Doc_vi/Windows_plot_fromFile.png[Get signal from file in Window_plot.vi]
 
 Features of Get signal from HW:
 
