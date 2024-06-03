@@ -11,7 +11,7 @@ LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a system-design
 As mentioned earlier, the project is divided into 3 main parts: the graphical interface, the interface controller, and the serial communication controller. The structure of the project in LabVIEW is shown below.
 
 .Project Structure of the GUI application
-image::../documentation_log/Graphs_Doc_vi/Project_Structure_1.svg[Project Structure]
+image::../documentation_log/graphs_doc_vi/Project_Structure_1.svg[Project Structure]
 
 === LabView Project Structure 
 
@@ -22,7 +22,7 @@ The graphical interface was developed within the LabVIEW environment, specifical
 Within the LabVIEW project, the sub-blocks are organized in the following way:
 
 .VI Hierarchy of the LabView Project
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_17_0h.png[Hierarquical view in the project Labview]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184737_17_0h.png[Hierarquical view in the project Labview]
 
 //Donde los principales subbloques son:
 Where the main sub-blocks are:
@@ -53,7 +53,7 @@ It is the sub-block responsible for communication between the different sub-bloc
 The main menu function acts as the focal point for navigating and utilizing the diverse range of features and capabilities within our application. When users initiate the application, they encounter a user-friendly menu interface, offering a variety of options that cater to their specific requirements.
 
 .Main_menu.vi icon
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_0_0c.png[Main Menu front icon]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184737_0_0c.png[Main Menu front icon]
 
 
 *Key functionalities include:*
@@ -65,17 +65,17 @@ image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_0_0c.png[Main Men
 - Implementing robust error handling mechanisms
 
 .Main Menu front panel
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_1_0.png[Main Menu front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184737_1_0.png[Main Menu front panel]
 
 === Window_plot.vi
 //Es el subbloque encargado de la visualizacion de los datos en tiempo real.
 This window has the capability to visualize and analyze the graphs of the stored signals from the Main_menu.vi. The user can select the desired signal to be displayed on the graph, and the graph will be updated in real-time as new data is received. The user can also adjust the scale of the graph to better visualize the data.
 
 .Window_plot.vi icon
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_0_0c.png[window_plot icon]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_0_0c.png[window_plot icon]
 
 .Window_plot front panel
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
 === Call_signal_fromHW.vi
 Through this function you can select the stored signals from the Main_menu.
@@ -84,23 +84,23 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 En el siguiente diagrama se puede observar las entradas y salidas de este subbloque.
 
 .Call_signal_fromHW.vi icon with inputs and outputs
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_7_0c.png[Call_signal_fromHW front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_7_0c.png[Call_signal_fromHW front panel]
 
 Es asi que en el front panel se muestra la lista de las senales almacenadas en el Main_menu.vi, de las cuales se puede seleccionar la deseada para ser visualizada en el Window_plot.vi.
 
 .Call_signal_fromHW.vi front panel
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_8_0.png[Call_signal_fromHW front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_8_0.png[Call_signal_fromHW front panel]
 
 === Call_signal_fromfile.vi
 This function is responsible for reading data from a CSV file and displaying it on the graph. The user can select the desired file from the file browser and the data will be displayed on the graph in real-time.
 
 .Call_signal_fromfile.vi icon with inputs and outputs
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_13_0c.png[Call_signal_fromfile front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_13_0c.png[Call_signal_fromfile front panel]
 
 Through this function you can select the signals stored in a CSV file.
 
 .Call_signal_fromfile.vi front panel
-image::../documentation_log/Graphs_Doc_vi/Windows_plot_fromFile.png[Get signal from file in Window_plot.vi]
+image::../documentation_log/graphs_doc_vi/Windows_plot_fromFile.png[Get signal from file in Window_plot.vi]
 
 ==== Shared_variables.lvlib
 //Es el subbloque encargado de la comunicacion entre los diferentes subbloques de la interfaz grafica a traves de variables compartidas.
@@ -112,7 +112,7 @@ LabVIEW provides access to a wide variety of technologies for creating distribut
 Using the shared variable, you can share data between loops on a single diagram or between VIs across the network. In contrast to many other data-sharing methods in LabVIEW, such as UDP/TCP, LabVIEW queues, and Real-Time FIFOs, you typically configure the shared variable at edit time using property dialogs, and you do not need to include configuration code in your application.
 
 .Shared_variables.lvlib in LabVIEW project
-image::../documentation_log/Graphs_Doc_vi/Shared_variables.PNG[Shared_variables.lvlib icon]
+image::../documentation_log/graphs_doc_vi/Shared_variables.PNG[Shared_variables.lvlib icon]
 
 == Getting started of GUI Application ==
 
@@ -166,25 +166,25 @@ Click on the Save option, where the port and IP address will be saved. Subsequen
 
 .Communication Configuration tab in Main_menu.vi
 // load Main_menu_Commun_Config.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
+image::../documentation_log/graphs_doc_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
 
 Having a connection, you can move to the control tab where you can view the current control set. With the "CS enable" and "CTRS enable" buttons, they activate the control system and control respectively.
 
 .Control tab in Main_menu.vi
 // load Main_menu_Control.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Control.png[Main_menu_Control]
+image::../documentation_log/graphs_doc_vi/Main__menu_Control.png[Main_menu_Control]
 
 In the Traces tab, you can see the name of the current traces system and samples per signal. It is determined if the data is obtained continuously or only once in the "Global Mode" option and the refresh time in "Refresh Time". Having the options ready, click on the "Start recording" button to start obtaining the data.
 
 .Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_traces.png[Main_menu_Traces]
+image::../documentation_log/graphs_doc_vi/Main__menu_traces.png[Main_menu_Traces]
 
 Next, go to the Plot tab, where you can see the possible active windows and there is a button to close them ("Close all plots") in a single instant. Clicking on the "Generate plot window" button displays a window with the graphs of the obtained signals.
 
 .Plot tab in Main_menu.vi
 // load Main_menu_Plot.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Plot.png[Main_menu_Plot]
+image::../documentation_log/graphs_doc_vi/Main__menu_Plot.png[Main_menu_Plot]
 
 ==== Through Window_plot.vi
 
@@ -193,7 +193,7 @@ image::../documentation_log/Graphs_Doc_vi/Main__menu_Plot.png[Main_menu_Plot]
 After having an active graph window, the obtained signals can be visualized. A graph showing the signal amplitude on the Y-axis and time on the X-axis.
 
 .Window_plot front panel
-image::../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
 //Es asi que en la parte superior izquierda de la ventana se puede proceder solicitar la senal requerida a traves de las siguientes dos opciones. En la opcion que dice "New" permite elegir entre dos opciones:
 
@@ -211,7 +211,7 @@ Thus, in the upper left part of the window, you can proceed to request the requi
 At the moment of selecting the signal, it will be displayed on the graph and its name will be displayed in the lower right part of the window, in the "Plot legend" table
 
 .Table of plot legend.vi
-image::../documentation_log/Graphs_Doc_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
+image::../documentation_log/graphs_doc_vi/Windows_p_Plot_leyend_table.PNG[Plot legend in Window_plot.vi]
 
 ==== Close Window_plot.vi ====
 

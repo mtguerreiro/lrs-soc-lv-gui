@@ -22,7 +22,7 @@ In the front panel, the following elements are found:
 
 .Indicator "Error" and button "Clear error"
 // load Main_menu_Error_button.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Error_button.png[Error button ]
+image::../documentation_log/graphs_doc_vi/Main__menu_Error_button.png[Error button ]
 
 
 === Tab Error Handler ===
@@ -33,7 +33,7 @@ In this tab, the error that has been generated in the application is displayed. 
 
 .Error Handler tab in Main_menu.vi
 // load Error Handler.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Error_Handler.png[Main_menu_Plot]
+image::../documentation_log/graphs_doc_vi/Main__menu_Error_Handler.png[Main_menu_Plot]
 
 
 === Tab Plot
@@ -42,7 +42,7 @@ In this tab you can see the possible active windows in the table *List of active
 
 .Plot tab in Main_menu.vi
 // load Main_menu_Plot.png
-image::..//documentation_log/Graphs_Doc_vi/Main__menu_Plot.png[Main_menu_Plot]
+image::..//documentation_log/graphs_doc_vi/Main__menu_Plot.png[Main_menu_Plot]
 
 === Tab Traces
 
@@ -62,7 +62,7 @@ The button *CSV* is used to save the all the data obtained in a CSV file.
 
 .Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_traces.png[Main_menu_Traces]
+image::../documentation_log/graphs_doc_vi/Main__menu_traces.png[Main_menu_Traces]
 
 
 === Tab Control
@@ -81,7 +81,7 @@ Next, the *CS enable* button enables the control system, indicating a color chan
 
 .Control tab in Main_menu.vi
 // load Main_menu_Control.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Control.png[Main_menu_Control]
+image::../documentation_log/graphs_doc_vi/Main__menu_Control.png[Main_menu_Control]
 
 ==== Section CS_IF_Params
 //En el bloque CS_IF_Params se encuentran cuatro controles numericos que permiten configurar los parametros de la interfaz de control. Estos parametros son:
@@ -127,7 +127,7 @@ Subsequently, the application will verify if there is a connection with the micr
 
 .Communication Configuration tab in Main_menu.vi
 // load Main_menu_Commun_Config.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
+image::../documentation_log/graphs_doc_vi/Main__menu_Comm_Config.png[Main_menu_Communication_Config]
 
 === Tab Message
 
@@ -139,5 +139,5 @@ This tab is only used to send messages and data to the active windows in the app
 
 .Message tab in Main_menu.vi
 // load Main_menu_Message.png
-image::../documentation_log/Graphs_Doc_vi/Main__menu_Message.png[Main_menu_Message]
+image::../documentation_log/graphs_doc_vi/Main__menu_Message.png[Main_menu_Message]
 

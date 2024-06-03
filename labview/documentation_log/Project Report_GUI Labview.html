@@ -589,7 +589,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_call_signal_fromfile_vi">Call_signal_fromfile.vi</a></li>
 </ul>
 </li>
-<li><a href="#_gui_application">GUI Application</a>
+<li><a href="#_getting_started_of_gui_application">Getting started of GUI Application</a>
 <ul class="sectlevel2">
 <li><a href="#_overview_2">Overview</a></li>
 <li><a href="#_prerequisites">Prerequisites</a></li>
@@ -605,7 +605,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_tab_message">Tab Message</a></li>
 </ul>
 </li>
-<li><a href="#_window_plot_vi_2">Window_plot.vi</a>
+<li><a href="#_window_plot_vi_in_detail">Window_plot.vi in detail</a>
 <ul class="sectlevel2">
 <li><a href="#_overview_4">Overview</a></li>
 <li><a href="#_elements_2">Elements</a></li>
@@ -668,20 +668,36 @@ Please refer to the table of contents for easy navigation through the document.<
 <div class="sect3">
 <h4 id="_control_systems">Control Systems</h4>
 <div class="paragraph">
-<p>Different control systems interact with the actuators present in the global system and can be contained within a single controller as shown in the figure <a href="#CS_diagram1.png">control system schematic</a>.</p>
+<p>Different control systems interact with the actuators present in the global system and can be contained within a single controller as shown in the figure</p>
 </div>
 <div class="paragraph">
 <p>Within the control system, it is divided into two sections, the controller and the hardware.</p>
 </div>
 <div class="paragraph">
 <div class="title">Controller</div>
-<p>In the controller, the following basic elements exist:
-    - ID
-    - Enable/disable
-    - Status
-    - Controller interface
-    - Hardware interface
-These are defined within the controller&#8217;s algorithm. Much of the GUI interaction is done with these elements.</p>
+<p>In the controller, the following basic elements exist:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID</p>
+</li>
+<li>
+<p>Enable/disable</p>
+</li>
+<li>
+<p>Status</p>
+</li>
+<li>
+<p>Controller interface</p>
+</li>
+<li>
+<p>Hardware interface</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These are defined within the controller&#8217;s algorithm. Much of the GUI interaction is done with these elements.</p>
 </div>
 <div class="paragraph">
 <p>On the other hand, the hardware is divided into two sections:
@@ -856,7 +872,7 @@ The Internet is a packet-switched network, which means that data is divided into
 </li>
 <li>
 <p>If negative, there was an error executing the command
-== GUI LabVIEW</p>
+== LabVIEW Project ==</p>
 </li>
 </ul>
 </div>
@@ -880,7 +896,7 @@ The Internet is a packet-switched network, which means that data is divided into
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Project_Structure_1.svg" alt="Project Structure">
+<img src="../documentation_log/Graphs_Doc_vi/Project_Structure_1.svg" alt="Project Structure">
 </div>
 <div class="title">Figure 4. Project Structure of the GUI application</div>
 </div>
@@ -895,7 +911,7 @@ The Internet is a packet-switched network, which means that data is divided into
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184737_17_0h.png" alt="Hierarquical view in the project Labview">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_17_0h.png" alt="Hierarquical view in the project Labview">
 </div>
 <div class="title">Figure 5. VI Hierarchy of the LabView Project</div>
 </div>
@@ -936,7 +952,7 @@ It is the sub-block responsible for data from a csv file to Window_plot.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184737_0_0c.png" alt="Main Menu front icon">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_0_0c.png" alt="Main Menu front icon">
 </div>
 <div class="title">Figure 6. Main_menu.vi icon</div>
 </div>
@@ -958,7 +974,7 @@ It is the sub-block responsible for data from a csv file to Window_plot.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184737_1_0.png" alt="Main Menu front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184737_1_0.png" alt="Main Menu front panel">
 </div>
 <div class="title">Figure 7. Main Menu front panel</div>
 </div>
@@ -970,13 +986,13 @@ It is the sub-block responsible for data from a csv file to Window_plot.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_0_0c.png" alt="window_plot icon">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_0_0c.png" alt="window_plot icon">
 </div>
 <div class="title">Figure 8. Window_plot.vi icon</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
 </div>
 <div class="title">Figure 9. Window_plot front panel</div>
 </div>
@@ -992,7 +1008,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_7_0c.png" alt="Call_signal_fromHW front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_7_0c.png" alt="Call_signal_fromHW front panel">
 </div>
 <div class="title">Figure 10. Call_signal_fromHW.vi icon with inputs and outputs</div>
 </div>
@@ -1001,7 +1017,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.png" alt="Call_signal_fromHW front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_8_0.png" alt="Call_signal_fromHW front panel">
 </div>
 <div class="title">Figure 11. Call_signal_fromHW.vi front panel</div>
 </div>
@@ -1013,7 +1029,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_13_0c.png" alt="Call_signal_fromfile front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_13_0c.png" alt="Call_signal_fromfile front panel">
 </div>
 <div class="title">Figure 12. Call_signal_fromfile.vi icon with inputs and outputs</div>
 </div>
@@ -1022,7 +1038,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png" alt="Call_signal_fromfile front panel">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_plot_fromFile.png" alt="Get signal from file in Window_plot.vi">
 </div>
 <div class="title">Figure 13. Call_signal_fromfile.vi front panel</div>
 </div>
@@ -1039,16 +1055,16 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184737_16_0c.png" alt="Shared_variables.lvlib icon">
+<img src="../documentation_log/Graphs_Doc_vi/Shared_variables.PNG" alt="Shared_variables.lvlib icon">
 </div>
-<div class="title">Figure 14. Shared_variables.lvlib icon</div>
+<div class="title">Figure 14. Shared_variables.lvlib in LabVIEW project</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_gui_application">GUI Application</h2>
+<h2 id="_getting_started_of_gui_application">Getting started of GUI Application</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_overview_2">Overview</h3>
@@ -1069,7 +1085,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </li>
 <li>
 <p>Access to the GUI App in the
-<a href="labview/builds/GUI_App/GUI_App.exe">GUI_App folder</a></p>
+<a href="../labview/builds/GUI_App/GUI_App.exe">GUI_App folder</a></p>
 </li>
 </ul>
 </div>
@@ -1086,7 +1102,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </li>
 <li>
 <p>Download GUI App in the
-<a href="labview/builds/GUI_App/GUI_App.exe">GUI_App folder</a></p>
+<a href="../labview/builds/GUI_App/GUI_App.exe">GUI_App folder</a></p>
 </li>
 </ul>
 </div>
@@ -1116,7 +1132,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Comm_Config.png" alt="Main_menu_Communication_Config">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Comm_Config.png" alt="Main_menu_Communication_Config">
 </div>
 <div class="title">Figure 15. Communication Configuration tab in Main_menu.vi</div>
 </div>
@@ -1125,7 +1141,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Control.png" alt="Main_menu_Control">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Control.png" alt="Main_menu_Control">
 </div>
 <div class="title">Figure 16. Control tab in Main_menu.vi</div>
 </div>
@@ -1134,7 +1150,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_traces.png" alt="Main_menu_Traces">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_traces.png" alt="Main_menu_Traces">
 </div>
 <div class="title">Figure 17. Traces tab in Main_menu.vi</div>
 </div>
@@ -1143,7 +1159,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Plot.png" alt="Main_menu_Plot">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Plot.png" alt="Main_menu_Plot">
 </div>
 <div class="title">Figure 18. Plot tab in Main_menu.vi</div>
 </div>
@@ -1155,7 +1171,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
 </div>
 <div class="title">Figure 19. Window_plot front panel</div>
 </div>
@@ -1177,7 +1193,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG" alt="Plot legend in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_p_Plot_leyend_table.PNG" alt="Plot legend in Window_plot.vi">
 </div>
 <div class="title">Figure 20. Table of plot legend.vi</div>
 </div>
@@ -1186,7 +1202,7 @@ Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 <h4 id="_close_window_plot_vi">Close Window_plot.vi</h4>
 <div class="paragraph">
 <p>The simplest way to close the graph window is to click on the "Close" button in the upper right part of the window. Or also by clicking on the "Close all plots" button in the Main_menu.vi window.
-== Main_menu.vi</p>
+== Main_menu.vi in detail ==</p>
 </div>
 </div>
 </div>
@@ -1215,7 +1231,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Error_button.png" alt="Error button">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Error_button.png" alt="Error button">
 </div>
 <div class="title">Figure 21. Indicator "Error" and button "Clear error"</div>
 </div>
@@ -1227,7 +1243,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Error_Handler.png" alt="Main_menu_Plot">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Error_Handler.png" alt="Main_menu_Plot">
 </div>
 <div class="title">Figure 22. Error Handler tab in Main_menu.vi</div>
 </div>
@@ -1239,7 +1255,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Plot.png" alt="Main_menu_Plot">
+<img src="..//documentation_log/Graphs_Doc_vi/Main__menu_Plot.png" alt="Main_menu_Plot">
 </div>
 <div class="title">Figure 23. Plot tab in Main_menu.vi</div>
 </div>
@@ -1269,7 +1285,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_traces.png" alt="Main_menu_Traces">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_traces.png" alt="Main_menu_Traces">
 </div>
 <div class="title">Figure 24. Traces tab in Main_menu.vi</div>
 </div>
@@ -1287,7 +1303,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Control.png" alt="Main_menu_Control">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Control.png" alt="Main_menu_Control">
 </div>
 <div class="title">Figure 25. Control tab in Main_menu.vi</div>
 </div>
@@ -1361,7 +1377,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Comm_Config.png" alt="Main_menu_Communication_Config">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Comm_Config.png" alt="Main_menu_Communication_Config">
 </div>
 <div class="title">Figure 26. Communication Configuration tab in Main_menu.vi</div>
 </div>
@@ -1376,7 +1392,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Main__menu_Message.png" alt="Main_menu_Message">
+<img src="../documentation_log/Graphs_Doc_vi/Main__menu_Message.png" alt="Main_menu_Message">
 </div>
 <div class="title">Figure 27. Message tab in Main_menu.vi</div>
 </div>
@@ -1384,7 +1400,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 </div>
 <div class="sect1">
-<h2 id="_window_plot_vi_2">Window_plot.vi</h2>
+<h2 id="_window_plot_vi_in_detail">Window_plot.vi in detail</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_overview_4">Overview</h3>
@@ -1401,7 +1417,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_1_0.png" alt="window_plot front panel">
 </div>
 <div class="title">Figure 28. Window_plot front panel</div>
 </div>
@@ -1422,7 +1438,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Windows_p_Graph_pallete.PNG" alt="Graph pallete in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_p_Graph_pallete.PNG" alt="Graph pallete in Window_plot.vi">
 </div>
 <div class="title">Figure 29. Graph Pallet</div>
 </div>
@@ -1434,7 +1450,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_graph_cursor.gif" alt="Cursor">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_graph_cursor.gif" alt="Cursor">
 </div>
 </div>
 <div class="paragraph">
@@ -1442,7 +1458,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_graph_resize.gif" alt="Zoom">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_graph_resize.gif" alt="Zoom">
 </div>
 </div>
 <div class="paragraph">
@@ -1450,7 +1466,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_torectangle.gif" alt="Zoom to Rectangle">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_torectangle.gif" alt="Zoom to Rectangle">
 </div>
 </div>
 <div class="paragraph">
@@ -1458,7 +1474,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_xzoom.gif" alt="X-zoom">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_xzoom.gif" alt="X-zoom">
 </div>
 </div>
 <div class="paragraph">
@@ -1466,7 +1482,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_yzoom.gif" alt="Y-zoom">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_yzoom.gif" alt="Y-zoom">
 </div>
 </div>
 <div class="paragraph">
@@ -1474,7 +1490,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_tofit.gif" alt="Zoom In about Point">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_tofit.gif" alt="Zoom In about Point">
 </div>
 </div>
 <div class="paragraph">
@@ -1482,7 +1498,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_outaboutpoint.gif" alt="Zoom Out about Point">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_outaboutpoint.gif" alt="Zoom Out about Point">
 </div>
 </div>
 <div class="paragraph">
@@ -1490,7 +1506,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_zoom_inaboutpoint.gif" alt="Zoom to Fit">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_zoom_inaboutpoint.gif" alt="Zoom to Fit">
 </div>
 </div>
 <div class="paragraph">
@@ -1498,7 +1514,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Graph%20pallet/noloc_graph_repo.gif" alt="Panning Tool">
+<img src="../documentation_log/Graphs_Doc_vi/Graph%20pallet/noloc_graph_repo.gif" alt="Panning Tool">
 </div>
 </div>
 <div class="ulist">
@@ -1513,7 +1529,7 @@ Thus, the elements found in the front panel of Main_menu.vi will be described be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Windows_p_Plot_leyend_table.PNG" alt="Plot legend in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_p_Plot_leyend_table.PNG" alt="Plot legend in Window_plot.vi">
 </div>
 <div class="title">Figure 30. Table of plot legend</div>
 </div>
@@ -1542,9 +1558,27 @@ The first rectangle is used to select the signal to be offset. And follows the s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/Windows_p_Select%20offset.PNG" alt="Select offset in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_p_Select%20offset.PNG" alt="Select offset in Window_plot.vi">
 </div>
 <div class="title">Figure 31. Offset Control</div>
+</div>
+<div class="paragraph">
+<p>When this control is used, the signals stop for interpretation. The only way to resume data acquisition is by accessing the <em>Configuration&#8594;Local Mode &amp; Refresh Time menu</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_plot_LocalMode_1.PNG" alt="Local mode in Window_plot.vi">
+</div>
+<div class="title">Figure 32. Path to <em>Local mode &amp; Refresh Time</em> option.</div>
+</div>
+<div class="paragraph">
+<p>In that section, you can resume data acquisition. And also it can be defined the local refresh time of the graph.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_plot_LocalMode_2.PNG" alt="Local mode in Window_plot.vi">
+</div>
+<div class="title">Figure 33. Local mode &amp; Refresh Time window</div>
 </div>
 </div>
 <div class="sect3">
@@ -1554,9 +1588,9 @@ The first rectangle is used to select the signal to be offset. And follows the s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_8_0.PNG" alt="Get signal from HW in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/LVtemp20240312184738_8_0.PNG" alt="Get signal from HW in Window_plot.vi">
 </div>
-<div class="title">Figure 32. Get signal from HW window</div>
+<div class="title">Figure 34. Get signal from HW window</div>
 </div>
 <div class="paragraph">
 <p>Features of Get signal from HW:</p>
@@ -1564,10 +1598,10 @@ The first rectangle is used to select the signal to be offset. And follows the s
 <div class="ulist">
 <ul>
 <li>
-<p>Plot window: Shows the current name of the window.</p>
+<p>Plot window: Shows the current name of the caller window_plot.vi.</p>
 </li>
 <li>
-<p>Clone Name: Shows the name of the clone version of the window_plot.vi .</p>
+<p>Clone Name: Shows the name of the clone version of Call_signal_fromfile.vi.</p>
 </li>
 <li>
 <p>Select signal: Select the signal to be plotted.</p>
@@ -1582,7 +1616,7 @@ The first rectangle is used to select the signal to be offset. And follows the s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../dev_labview/Documentation_vi/LVtemp20240312184738_14_0.png" alt="Get signal from file in Window_plot.vi">
+<img src="../documentation_log/Graphs_Doc_vi/Windows_plot_fromFile.png" alt="Get signal from file in Window_plot.vi">
 </div>
 </div>
 <div class="paragraph">
