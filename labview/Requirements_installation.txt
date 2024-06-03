@@ -1,4 +1,0 @@
-Need to install:
-- NI LabVIEW Runtime 2022 Q3 Patch 1 (64-bit). Link: https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html#460613
-
-* Current Version in LabVIEW Development: LabVIEW 2022 Q3 Patch 1 (64-bit)
