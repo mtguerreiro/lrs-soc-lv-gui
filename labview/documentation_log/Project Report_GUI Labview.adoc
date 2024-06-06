@@ -1,6 +1,5 @@
 = Design and Implementation of User Interface for Labview Application =
 :toc: preamble
-:reproducible:
 
 Department of Electrical and Computer Engineering
 
@@ -8,10 +7,20 @@ Chair of Control Systems
 
 *RPTU*
 
+:sectnums:
+:toclevels: 4
+:toc-title: Table of Contents
+:doctype: book
+:keywords: Labview, User Interface, Control Systems, ADCs, PWMs, Traces, Controller, TCP/IP, Communication Protocol, Command Structure
+
+:description: This document describes the design and implementation of a user interface for a Labview application. The application is designed to control a system. The user interface is designed to allow the user to control the system by sending commands to the controller through a TCP/IP communication protocol.
 :reproducible:
 
+
+//:reproducible:
+
 // Reference to introduction document
-== Abstract ==
+
 include::introduction.adoc[]
 include::Labview Project Insights.adoc[]
 include::Main_menu.adoc[]

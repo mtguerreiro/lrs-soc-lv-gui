@@ -6,13 +6,13 @@ Please refer to the table of contents for easy navigation through the document.
 === Overview ===
 The Graphical User Interface (GUI) application is the main interface for the user to interact with the control system. It is responsible for displaying the data, sending commands to the microcontroller, and handling errors. The GUI application is built using LabVIEW, a graphical programming language that allows for easy and intuitive development of user interfaces.
 
-=== Purpose
+=== Purpose ===
 The purpose of this document is to provide a comprehensive overview of the use of the changes made to the naming conventions within our project. This document is intended for the use of our team members and any future contributors to the project. It is designed to provide a clear understanding of the old and new names, as well as a brief description of their functionalities.
 
-=== Scope
+=== Scope ===
 The scope of this document covers the changes made to the naming conventions within the GUI application. The changes are categorized into different sections based on the components of the GUI application, including VI, Functions, TCP Client, and Variables. Each section provides a detailed overview of the old and new names, along with a brief description of their functionalities.
 
-== Control System
+== Comprehensive Overview of the Control System ==
 
 The control system is based on the interaction of the controller with various actuators within the system. The controller has the flexibility to implement different control strategies to deal with the needs of the applications. On the other hand, the controller has the ability to interact with the user through a graphical user interface (GUI) that allows the user to interact with the control system. The GUI is responsible for displaying information to the user, sending commands to the controller, and handling errors.
 
@@ -39,10 +39,10 @@ control "Actuator" as G
 @enduml
 ....
 
-=== Basic Elements
+=== Basic Elements ===
 Inside the controller, there are two basic elements with which the GUI interacts:
 
-==== Control Systems
+==== Control Systems ====
 Different control systems interact with the actuators present in the global system and can be contained within a single controller as shown in the figure
 
 //.The control system schematic
@@ -82,7 +82,7 @@ rectangle "Control system" {
 @enduml
 ....
 
-==== Traces
+==== Traces ====
 Related to the input and output signals that interact with the controller. The information is stored in the controller's RAM and is listed as the different traces that can be visualized later in the GUI.
 
 .Traces diagram
@@ -100,7 +100,7 @@ rectangle "Memory (RAM)" {
 @enduml
 ....
 
-=== Communication with the Controller
+=== Communication with the Controller ===
 As mentioned earlier, the control systems and traces are found within the controller. Therefore, an interface is defined to gain access by sending a message to the controller with a command followed by the data.
 
 .Basic command structure
@@ -124,7 +124,7 @@ _Example: set PWM frequency of control system 1_
 |===
 
 
-=== TCP protocol/IP in the controller
+=== TCP protocol/IP in the controller ===
 .Definition
 TCP/IP, standard Internet communications protocols that allow digital computers to communicate over long distances.
 The Internet is a packet-switched network, which means that data is divided into smaller packets, sent individually over the network, and then reassembled at the destination. TCP/IP is a suite of protocols that governs the way data packets are transmitted over the Internet. It is the foundation of the Internet and is used by virtually every application that communicates over the network.
