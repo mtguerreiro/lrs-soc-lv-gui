@@ -1,1 +1,1 @@
-Input voltage,Output DC link,Inductor current
+Input voltage,Input DC link,Output DC link
