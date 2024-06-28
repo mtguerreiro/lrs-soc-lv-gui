@@ -1,4 +1,4 @@
-28.06.2024 16:18:46
+28.06.2024 16:26:41
 [General]
 Project: C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Project.lvproj
 Target: My Computer
@@ -18,7 +18,7 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_2updat
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_create_MenuSelections.vi	17.06.2024 20:44:26
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_evaluate_state.vi	04.06.2024 18:59:12
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Get_TRACEDATA.vi	17.06.2024 21:19:09
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_MenuSelections.vi	28.06.2024 16:00:56
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_MenuSelections.vi	28.06.2024 16:24:34
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_new_plot.vi	04.06.2024 18:59:12
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_queue_receiver2Window.vi	04.06.2024 18:59:12
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_receiver_queue_Main_menu.vi	04.06.2024 18:59:12
@@ -138,7 +138,7 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_sign
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export plot data to Clipboard.vi	28.06.2024 16:00:32	144
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export image.vi	04.06.2024 18:59:12	167
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Analysis\1siggen.llb\Ramp Pattern by Samples.vi	07.07.2022 02:41:54	62
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_MenuSelections.vi	28.06.2024 16:00:56	42
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_MenuSelections.vi	28.06.2024 16:24:34	43
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_evaluate_state.vi	04.06.2024 18:59:12	4
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_queue_receiver2Window.vi	04.06.2024 18:59:12	13
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_create_MenuSelections.vi	17.06.2024 20:44:26	4
@@ -162,11 +162,11 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Clien
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Client_34_enablep.vi	04.06.2024 18:59:12	117
 
 [Output File Version]
-GUI_App.exe	1.0.0.57
+GUI_App.exe	1.0.0.58
 
 [Output Files]
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	28.06.2024 16:18:52
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	28.06.2024 16:18:51
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	28.06.2024 16:18:51
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	28.06.2024 16:26:47
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	28.06.2024 16:26:46
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	28.06.2024 16:26:46
 
-28.06.2024 16:18:52
+28.06.2024 16:26:47
