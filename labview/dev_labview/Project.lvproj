@@ -24,6 +24,7 @@ An interface will grant access to control systems and plotting traces.</Property
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -87,8 +88,8 @@ An interface will grant access to control systems and plotting traces.</Property
 		<Item Name="Call_signal_fromfile.vi" Type="VI" URL="../Call_signal_fromfile.vi"/>
 		<Item Name="Call_signal_fromHW.vi" Type="VI" URL="../Call_signal_fromHW.vi"/>
 		<Item Name="Main_menu.vi" Type="VI" URL="../Main_menu.vi"/>
-		<Item Name="Share_Variables.lvlib" Type="Library" URL="../Share_Variables.lvlib"/>
 		<Item Name="Window_plot.vi" Type="VI" URL="../Window_plot.vi"/>
+		<Item Name="Share_Variables.lvlib" Type="Library" URL="../Share_Variables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -194,7 +195,7 @@ An interface will grant access to control systems and plotting traces.</Property
 				<Property Name="Bld_previewCacheID" Type="Str">{DC90849E-4250-4F8B-8747-7F553E39C540}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/GUI App/GUI App_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">56</Property>
+				<Property Name="Bld_version.build" Type="Int">58</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GUI_App.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/GUI App/GUI_App.exe</Property>
