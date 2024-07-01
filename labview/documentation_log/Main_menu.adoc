@@ -63,7 +63,7 @@ The button *CSV* is used to save the all the data obtained in a CSV file.
 
 .Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
-image::../documentation_log/graphs_doc_vi/Main__menu_traces_3.png[Main_menu_Traces]
+image::../documentation_log/graphs_doc_vi/Main__menup.png[Main_menu_Traces]
 
 
 === Tab Control

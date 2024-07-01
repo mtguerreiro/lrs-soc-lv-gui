@@ -90,7 +90,7 @@ image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_7_0c.png[Call_sig
 Es asi que en el front panel se muestra la lista de las senales almacenadas en el Main_menu.vi, de las cuales se puede seleccionar la deseada para ser visualizada en el Window_plot.vi.
 
 .Call_signal_fromHW.vi front panel
-image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_8_0.png[Call_signal_fromHW front panel]
+image::../documentation_log/graphs_doc_vi/LVtemp20240701194140_11_0.png[Call_signal_fromHW front panel]
 
 === Call_signal_fromfile.vi ===
 This function is responsible for reading data from a CSV file and displaying it on the graph. The user can select the desired file from the file browser and the data will be displayed on the graph in real-time.
@@ -179,7 +179,7 @@ In the Traces tab, you can see the name of the current traces system and samples
 
 .Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
-image::../documentation_log/graphs_doc_vi/Main__menu_traces.png[Main_menu_Traces]
+image::../documentation_log/graphs_doc_vi/Main__menup.png[Main_menu_Traces]
 
 Next, go to the Plot tab, where you can see the possible active windows and there is a button to close them ("Close all plots") in a single instant. Clicking on the "Generate plot window" button displays a window with the graphs of the obtained signals.
 
