@@ -105,14 +105,15 @@ image::../documentation_log/graphs_doc_vi/Windows_plot_LocalMode_2.PNG[Local mod
 The Get signal from HW is used to get the signal from the hardware.
 
 .Get signal from HW window
-image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_8_0.PNG[Get signal from HW in Window_plot.vi]
+image::../documentation_log/graphs_doc_vi/LVtemp20240701194140_11_0.PNG[Get signal from HW in Window_plot.vi]
 
 Features of Get signal from HW:
 
 - Plot window: Shows the current name of the caller window_plot.vi.
 - Clone Name: Shows the name of the clone version of Call_signal_fromfile.vi.
-- Select signal: Select the signal to be plotted.
-
+- Select signal: Select the signals to be plotted. The signals can be select individually or many at once holding keys _Shift + Click_ .
+- Save Signals profile: Save the signals profile in the temporary file that list the signals to be plotted for the next time the window_plot.vi is called.
+- Load Signals profile: Load the signals previously saved.
 
 ==== Get signal from file
 

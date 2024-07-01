@@ -55,15 +55,17 @@ The indicator *Trace total samples* shows the total samples that are being obtai
 
 In *Global Mode* is determined if the data is obtained continuously or only once.
 
-The *Refresh time (ms)* determines the time that the application waits to obtain the data again.
+The *Refresh time (ms)* determines the time that the application waits to obtain the data again. In the current version, there are two types of Refresh time, which correspond to either Continuous mode or Instant mode and are taken into consideration depending on the selected Global Mode. However, for it to work, the Start record button must be pressed.
 
-Finally, the *Start record* button to start obtaining the data from microcontroller depending on the previous configurations. It is possible to stop the data acquisition by pressing again the *Start record* button. Changing set up values will be applied when the data acquisition pressing again the *Start record* button.
+// En la actual version existen dos tipos de Refresh time, cuales corresponden para el modo continuo o instante y se toma en consideracion dependiendo del Global Mode seleccionado. Sin embargo, para que pueda funcionar se debe presionar el boton Start record.
+
+Finally, the *Start record* button to start obtaining the data from microcontroller depending on the previous configurations. It is possible to stop the data acquisition by pressing again the *Start record* button. Changing set up values will be applied when the data acquisition pressing again the *Start record* button. The indicator *Run_record* allow to be aware of the status of the data acquisition.
 
 The button *CSV* is used to save the all the data obtained in a CSV file.
 
 .Traces tab in Main_menu.vi
 // load Main_menu_Traces.png
-image::../documentation_log/graphs_doc_vi/Main__menu_traces_3.png[Main_menu_Traces]
+image::../documentation_log/graphs_doc_vi/Main__menup.png[Main_menu_Traces]
 
 
 === Tab Control
