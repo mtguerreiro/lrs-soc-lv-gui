@@ -111,7 +111,7 @@ Features of Get signal from HW:
 
 - Plot window: Shows the current name of the caller window_plot.vi.
 - Clone Name: Shows the name of the clone version of Call_signal_fromfile.vi.
-- Select signal: Select the signals to be plotted. The signals can be select individually or many at once holding keys _Shift + Click_ .
+- Select signal: Select the signals to be plotted. The signals can be select individually or many at once holding keys _Shift + Click_ or _Ctrl + Click_ .
 - Save Signals profile: Save the signals profile in the temporary file that list the signals to be plotted for the next time the window_plot.vi is called.
 - Load Signals profile: Load the signals previously saved.
 
