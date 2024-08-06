@@ -24,6 +24,7 @@ An interface will grant access to control systems and plotting traces.</Property
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -39,6 +40,7 @@ An interface will grant access to control systems and plotting traces.</Property
 			<Item Name="Export image.vi" Type="VI" URL="../Export image.vi"/>
 			<Item Name="Export plot data to Clipboard.vi" Type="VI" URL="../Export plot data to Clipboard.vi"/>
 			<Item Name="Fc_2update_graph.vi" Type="VI" URL="../Fc_2update_graph.vi"/>
+			<Item Name="Fc_create_MenuSelections.vi" Type="VI" URL="../Fc_create_MenuSelections.vi"/>
 			<Item Name="Fc_evaluate_state.vi" Type="VI" URL="../Fc_evaluate_state.vi"/>
 			<Item Name="Fc_Get_TRACEDATA.vi" Type="VI" URL="../Fc_Get_TRACEDATA.vi"/>
 			<Item Name="Fc_MenuSelections.vi" Type="VI" URL="../Fc_MenuSelections.vi"/>
@@ -51,6 +53,7 @@ An interface will grant access to control systems and plotting traces.</Property
 			<Item Name="Fc_start_record.vi" Type="VI" URL="../Fc_start_record.vi"/>
 			<Item Name="Fc_to_CS_Enable.vi" Type="VI" URL="../Fc_to_CS_Enable.vi"/>
 			<Item Name="Fc_to_define_CSstatus.vi" Type="VI" URL="../Fc_to_define_CSstatus.vi"/>
+			<Item Name="Fc_to_read_TCP.vi" Type="VI" URL="../Fc_to_read_TCP.vi"/>
 			<Item Name="Fc_update_params_from_uc.vi" Type="VI" URL="../Fc_update_params_from_uc.vi"/>
 			<Item Name="receiver_Main_menu.vi" Type="VI" URL="../receiver_Main_menu.vi"/>
 			<Item Name="String2Array.vi" Type="VI" URL="../String2Array.vi"/>
@@ -85,10 +88,11 @@ An interface will grant access to control systems and plotting traces.</Property
 		<Item Name="Call_signal_fromfile.vi" Type="VI" URL="../Call_signal_fromfile.vi"/>
 		<Item Name="Call_signal_fromHW.vi" Type="VI" URL="../Call_signal_fromHW.vi"/>
 		<Item Name="Main_menu.vi" Type="VI" URL="../Main_menu.vi"/>
-		<Item Name="Share_Variables.lvlib" Type="Library" URL="../Share_Variables.lvlib"/>
 		<Item Name="Window_plot.vi" Type="VI" URL="../Window_plot.vi"/>
+		<Item Name="Share_Variables.lvlib" Type="Library" URL="../Share_Variables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
@@ -97,6 +101,7 @@ An interface will grant access to control systems and plotting traces.</Property
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -125,6 +130,7 @@ An interface will grant access to control systems and plotting traces.</Property
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
@@ -189,7 +195,7 @@ An interface will grant access to control systems and plotting traces.</Property
 				<Property Name="Bld_previewCacheID" Type="Str">{DC90849E-4250-4F8B-8747-7F553E39C540}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/GUI App/GUI App_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">32</Property>
+				<Property Name="Bld_version.build" Type="Int">63</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GUI_App.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/GUI App/GUI_App.exe</Property>
@@ -198,7 +204,7 @@ An interface will grant access to control systems and plotting traces.</Property
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/GUI App/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{61666519-2388-4EF2-B08E-F67BBEAAC5CF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CA25A32C-D10E-4003-A7E9-31F5D3F93FED}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
