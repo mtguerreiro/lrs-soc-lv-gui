@@ -1,4 +1,4 @@
-12.08.2024 17:52:08
+12.08.2024 18:21:09
 [General]
 Project: C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Project.lvproj
 Target: My Computer
@@ -8,7 +8,7 @@ OS: Windows x64 10.0
 [Open Top Level VIs]
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Main_menu.vi	08.08.2024 15:35:35
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromfile.vi	08.07.2024 17:37:31
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	12.08.2024 17:43:06
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	12.08.2024 18:20:55
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\New plot1_old.vi	04.06.2024 18:59:12
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Array2Matrix.vi	04.06.2024 18:59:12
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\ArrayS2ArrayAx_.vi	04.06.2024 18:59:12
@@ -133,7 +133,7 @@ C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\lvfile.llb\FT_
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\lvfile.llb\Get File Type.vi	07.07.2022 02:22:22	102
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\lvfile.llb\Is File an LLB.vi	07.07.2022 02:37:26	74
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\file.llb\Application Directory.vi	07.07.2022 02:37:24	19
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	12.08.2024 17:43:06	200
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	12.08.2024 18:20:55	204
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export plot data to Clipboard.vi	08.07.2024 17:37:31	144
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export image.vi	04.06.2024 18:59:12	167
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Analysis\1siggen.llb\Ramp Pattern by Samples.vi	07.07.2022 02:41:54	62
@@ -161,11 +161,11 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Clien
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Client_34_enablep.vi	04.06.2024 18:59:12	117
 
 [Output File Version]
-GUI_App.exe	1.0.0.68
+GUI_App.exe	1.0.0.70
 
 [Output Files]
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	12.08.2024 17:52:14
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	12.08.2024 17:52:13
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	12.08.2024 17:52:13
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	12.08.2024 18:21:17
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	12.08.2024 18:21:16
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	12.08.2024 18:21:16
 
-12.08.2024 17:52:14
+12.08.2024 18:21:17
