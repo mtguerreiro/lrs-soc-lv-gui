@@ -48,3 +48,11 @@ File to register the changes made in labview files
 
 ## 07.03.2024
 - Create new branch for documentation and preparation of the project
+
+## 16.08.2024
+- Add new features to the project:
+  - Multiselect signals
+  - Save and load the signals selected, using a file in txt format
+  - Possibility to save communication parameters with the hardware
+- Fix the error in the signals selection: The error was fixed by adding and additional wait time to the signals selection
+
