@@ -1,4 +1,4 @@
-21.08.2024 18:05:10
+21.08.2024 20:01:46
 [General]
 Project: C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Project.lvproj
 Target: My Computer
@@ -6,7 +6,7 @@ Build Specification: GUI App
 OS: Windows x64 10.0
 
 [Open Top Level VIs]
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Main_menu.vi	21.08.2024 17:20:44
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Main_menu.vi	21.08.2024 18:53:23
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromfile.vi	20.08.2024 14:54:58
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	20.08.2024 14:54:58
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\New plot1_old.vi	20.08.2024 14:54:58
@@ -17,7 +17,7 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export pl
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_2update_graph.vi	21.08.2024 17:42:07
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_create_MenuSelections.vi	20.08.2024 14:54:58
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_evaluate_state.vi	20.08.2024 14:54:58
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Get_TRACEDATA.vi	21.08.2024 18:04:18
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Get_TRACEDATA.vi	21.08.2024 18:54:29
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_MenuSelections.vi	21.08.2024 17:25:31
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_new_plot.vi	20.08.2024 14:54:58
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_queue_receiver2Window.vi	20.08.2024 14:54:58
@@ -51,10 +51,6 @@ C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\lvfile.llb\NI_
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Analysis\NI_AALBase.lvlib	07.07.2022 02:38:30	14.0.0.0
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\gmath\NI_Gmath.lvlib	07.07.2022 02:42:06	14.0.0.0
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Analysis\NI_AALPro.lvlib	07.07.2022 02:41:54	14.0.0.0
-C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\event_ctls.llb\lveventtype.ctl	07.07.2022 02:50:00	68
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_read_TCP.vi	20.08.2024 14:54:58	2
-C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\file.llb\Write Spreadsheet String.vi	07.07.2022 02:50:04	13
-C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\file.llb\Write Delimited Spreadsheet (DBL).vi	07.07.2022 03:11:26	59
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_create_MenuSelections.vi	20.08.2024 14:54:58	4
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Error Cluster From Error Code.vi	07.07.2022 02:22:24	99
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_evaluate_state.vi	20.08.2024 14:54:58	4
@@ -95,19 +91,6 @@ C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Waveform\WDTOps.llb\WD
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Waveform\WDTOps.llb\Check for Equality.vi	07.07.2022 02:38:56	20
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Waveform\WDTOps.llb\Check for multiple of dt.vi	07.07.2022 02:52:28	25
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Waveform\WDTOps.llb\WDT Get Waveform Subset DBL.vi	07.07.2022 02:52:28	131
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_new_plot.vi	20.08.2024 14:54:58	9
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\String2Array.vi	20.08.2024 14:54:58	5
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\String2ArrayDbl.vi	20.08.2024 14:54:58	27
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_TCP_Client_33.vi	21.08.2024 17:23:44	114
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Get_TRACEDATA.vi	21.08.2024 18:04:18	30
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_save_conf_to_uc.vi	21.08.2024 16:52:39	20
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_start_record.vi	21.08.2024 17:42:44	24
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_update_params_from_uc.vi	21.08.2024 17:09:35	10
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_define_CSstatus.vi	20.08.2024 14:54:58	11
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_TCP_Client_34.vi	20.08.2024 14:54:58	112
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_SaveCTRLparams.vi	20.08.2024 14:54:58	6
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_CS_Enable.vi	20.08.2024 14:54:58	6
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Send_Msj_Nplot.vi	20.08.2024 14:54:58	7
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\DialogType.ctl	07.07.2022 02:37:24	8
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\whitespace.ctl	07.07.2022 02:25:16	16
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi	07.07.2022 02:25:16	227
@@ -121,7 +104,6 @@ C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Sear
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Find Tag.vi	07.07.2022 02:37:24	17
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Set Bold Text.vi	07.07.2022 02:37:22	22
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Format Message String.vi	07.07.2022 02:37:24	199
-C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Clear Errors.vi	07.07.2022 02:19:42	25
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\DialogTypeEnum.ctl	07.07.2022 02:37:24	4
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\miscctls.llb\LVRectTypeDef.ctl	07.07.2022 02:19:42	3
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Convert property node font to graphics font.vi	07.07.2022 02:37:24	4
@@ -134,12 +116,33 @@ C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Thre
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\GetHelpDir.vi	07.07.2022 02:37:22	9
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\BuildHelpPath.vi	07.07.2022 02:37:22	7
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Not Found Dialog.vi	07.07.2022 02:37:24	14
+C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Clear Errors.vi	07.07.2022 02:19:42	25
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\event_ctls.llb\eventvkey.ctl	07.07.2022 02:37:24	10
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\ErrWarn.ctl	07.07.2022 02:37:22	20
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Details Display Dialog.vi	07.07.2022 02:37:24	315
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\General Error Handler Core CORE.vi	07.07.2022 02:37:24	356
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\General Error Handler.vi	07.07.2022 02:37:26	204
 C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\error.llb\Simple Error Handler.vi	07.07.2022 02:37:24	46
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\receiver_Main_menu.vi	20.08.2024 14:54:58	4
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_receiver_queue_Main_menu.vi	20.08.2024 14:54:58	5
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Send_Msj_Nplot.vi	20.08.2024 14:54:58	7
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\String2Array.vi	20.08.2024 14:54:58	5
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\String2ArrayDbl.vi	20.08.2024 14:54:58	27
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_TCP_Client_34.vi	20.08.2024 14:54:58	112
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_CS_Enable.vi	20.08.2024 14:54:58	6
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_SaveCTRLparams.vi	20.08.2024 14:54:58	6
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_TCP_Client_33.vi	21.08.2024 17:23:44	114
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_define_CSstatus.vi	20.08.2024 14:54:58	11
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_update_params_from_uc.vi	21.08.2024 17:09:35	10
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_start_record.vi	21.08.2024 17:42:44	24
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_save_conf_to_uc.vi	21.08.2024 16:52:39	20
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_new_plot.vi	20.08.2024 14:54:58	9
+C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\file.llb\Write Spreadsheet String.vi	07.07.2022 02:50:04	13
+C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\Utility\file.llb\Write Delimited Spreadsheet (DBL).vi	07.07.2022 03:11:26	59
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_Get_TRACEDATA.vi	21.08.2024 18:54:29	37
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_to_read_TCP.vi	20.08.2024 14:54:58	2
+C:\Program Files\National Instruments\LabVIEW 2022\vi.lib\event_ctls.llb\lveventtype.ctl	07.07.2022 02:50:00	68
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Main_menu.vi	21.08.2024 18:53:23	497
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\New plot1_old.vi	20.08.2024 14:54:58	304
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Array2Matrix.vi	20.08.2024 14:54:58	25
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\String2ArrayInt.vi	20.08.2024 14:54:58	27
@@ -151,21 +154,18 @@ C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Clien
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Client_32.vi	20.08.2024 14:54:58	70
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\TCP Client_34_enablep.vi	20.08.2024 14:54:58	117
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_queue_receiver2Window.vi	20.08.2024 14:54:58	13
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\receiver_Main_menu.vi	20.08.2024 14:54:58	4
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Fc_receiver_queue_Main_menu.vi	20.08.2024 14:54:58	5
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromfile.vi	20.08.2024 14:54:58	54
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Call_signal_fromHW.vi	20.08.2024 14:54:58	242
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export plot data to Clipboard.vi	20.08.2024 14:54:58	144
 C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Export image.vi	20.08.2024 14:54:58	167
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Window_plot.vi	21.08.2024 17:26:07	462
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Main_menu.vi	21.08.2024 17:20:44	495
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\dev_labview\Window_plot.vi	21.08.2024 20:01:35	463
 
 [Output File Version]
-GUI_App.exe	1.0.0.99
+GUI_App.exe	1.0.0.100
 
 [Output Files]
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	21.08.2024 18:05:18
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	21.08.2024 18:05:17
-C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	21.08.2024 18:05:17
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.exe	21.08.2024 20:01:53
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.aliases	21.08.2024 20:01:52
+C:\Users\v_hernandez\Documents\Projects\C2\lrs-soc\labview\builds\GUI App\GUI_App.ini	21.08.2024 20:01:52
 
-21.08.2024 18:05:18
+21.08.2024 20:01:53
