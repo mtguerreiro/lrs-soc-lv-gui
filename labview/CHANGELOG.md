@@ -56,3 +56,5 @@ File to register the changes made in labview files
   - Possibility to save communication parameters with the hardware
 - Fix the error in the signals selection: The error was fixed by adding and additional wait time to the signals selection
 
+## 21.08.2024
+- Add Custom error: code 5001. Check if the trace size matches the signal size
