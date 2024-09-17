@@ -27,7 +27,7 @@ image::../documentation_log/graphs_doc_vi/Windows_p_Graph_pallete.PNG[Graph pall
 
 Here are some of the features you can access from the Graph Palette:
 
-*Cursor Movement Tool:* No function.
+*Cursor Movement Tool:* Every time the cursor select different zoom option, the graph is frozen. The only way to unfreeze the graph is selecting this cursor option.
 
 image::../documentation_log/graphs_doc_vi/graph_pallet/noloc_graph_cursor.gif[Cursor]
 
@@ -95,10 +95,16 @@ When this control is used, the signals stop for interpretation. The only way to 
 .Path to _Local mode & Refresh Time_ option.
 image::../documentation_log/graphs_doc_vi/Windows_plot_LocalMode_1.PNG[Local mode in Window_plot.vi]
 
-In that section, you can resume data acquisition. And also it can be defined the local refresh time of the graph.
+In this section, you can unfreeze or freeze the data acquisition. Also it can be defined the local refresh time of the graph.
 
 .Local mode & Refresh Time window
 image::../documentation_log/graphs_doc_vi/Windows_plot_LocalMode_2.PNG[Local mode in Window_plot.vi]
+
+==== Export Data
+
+The Export Data is used to export the data from the graph. In order to export the data is just necessary to right-click in the graph and select one of the next options showed in the image below.
+
+image::../documentation_log/graphs_doc_vi/Windows_plot_Export_Data.PNG[Export Data in Window_plot.vi]
 
 ==== Get signal from HW
 
