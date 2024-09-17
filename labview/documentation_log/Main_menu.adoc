@@ -111,11 +111,12 @@ _It should be clarified that these parameters will depend on the configuration d
 
 === Tab Comm Config
 
-La pestana Comm Config representa la seccion para configurar la comunicacion entre el microcontrolador y la aplicacion. En esta seccion se encuentran los siguientes elementos de control:
-- *Hostname*: Indicador para mostrar el nombre del host o IP Address a comunicar.
-- *Port name*: Seleccionador para elegir el puerto de comunicacion.
-- *Timeout ms*: Indicador para mostrar el tiempo de espera de la comunicacion.
-- *Save configuration*: Boton para guardar la configuracion de la comunicacion.
+//La pestana Comm Config representa la seccion para configurar la comunicacion entre el microcontrolador y la aplicacion. En esta seccion se encuentran los siguientes elementos de control:
+
+//- *Hostname*: Indicador para mostrar el nombre del host o IP Address a comunicar.
+//- *Port name*: Seleccionador para elegir el puerto de comunicacion.
+//- *Timeout ms*: Indicador para mostrar el tiempo de espera de la comunicacion.
+//- *Save configuration*: Boton para guardar la configuracion de la comunicacion.
 
 The Comm Config tab represents the section to configure the communication between the microcontroller and the application. In this section, the following control elements are found:
 

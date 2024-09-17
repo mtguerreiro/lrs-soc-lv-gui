@@ -79,15 +79,17 @@ image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_0_0c.png[window_p
 image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_1_0.png[window_plot front panel]
 
 === Call_signal_fromHW.vi ===
-Through this function you can select the stored signals from the Main_menu.
-Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
+Through this function you can select the stored signals from the Main_menu. This sub-block can be called at any time by any Window_plot.
+//Este subbloque puede ser llamado en cualquier momento por cualquier Window_plot.
 
-En el siguiente diagrama se puede observar las entradas y salidas de este subbloque.
+//En el siguiente diagrama se puede observar las entradas y salidas de este subbloque.
+In the following diagram, the inputs and outputs of this sub-block can be observed.
 
 .Call_signal_fromHW.vi icon with inputs and outputs
 image::../documentation_log/graphs_doc_vi/LVtemp20240312184738_7_0c.png[Call_signal_fromHW front panel]
 
-Es asi que en el front panel se muestra la lista de las senales almacenadas en el Main_menu.vi, de las cuales se puede seleccionar la deseada para ser visualizada en el Window_plot.vi.
+//Es asi que en el front panel se muestra la lista de las senales almacenadas en el Main_menu.vi, de las cuales se puede seleccionar la deseada para ser visualizada en el Window_plot.vi.
+Thus, in the front panel, the list of signals stored in the Main_menu.vi is displayed, from which the desired one can be selected to be visualized in the Window_plot.vi.
 
 .Call_signal_fromHW.vi front panel
 image::../documentation_log/graphs_doc_vi/LVtemp20240701194140_11_0.png[Call_signal_fromHW front panel]
